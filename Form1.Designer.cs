@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabControl1 = new TabControl();
+            tabPage0 = new TabPage();
+            Set_IM_location = new Button();
+            Show_IM_location = new TextBox();
+            label15 = new Label();
+            Set_GS_location = new Button();
+            Show_GS_location = new TextBox();
+            label13 = new Label();
             tabPage1 = new TabPage();
             Output_IMG_DPI = new ComboBox();
             label5 = new Label();
@@ -45,6 +52,7 @@
             ShowPDF_I_Source = new TextBox();
             label1 = new Label();
             tabPage2 = new TabPage();
+            Del_All_COM = new Button();
             Set_PDF_COM_location = new Button();
             Show_PDF_COM_location = new TextBox();
             label9 = new Label();
@@ -90,8 +98,8 @@
             openFileDialog1 = new OpenFileDialog();
             folderBrowserDialog1 = new FolderBrowserDialog();
             saveFileDialog1 = new SaveFileDialog();
-            tabPage0 = new TabPage();
             tabControl1.SuspendLayout();
+            tabPage0.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             tabPage3.SuspendLayout();
@@ -111,6 +119,52 @@
             tabControl1.Multiline = true;
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
+            // 
+            // tabPage0
+            // 
+            tabPage0.Controls.Add(Set_IM_location);
+            tabPage0.Controls.Add(Show_IM_location);
+            tabPage0.Controls.Add(label15);
+            tabPage0.Controls.Add(Set_GS_location);
+            tabPage0.Controls.Add(Show_GS_location);
+            tabPage0.Controls.Add(label13);
+            resources.ApplyResources(tabPage0, "tabPage0");
+            tabPage0.Name = "tabPage0";
+            tabPage0.UseVisualStyleBackColor = true;
+            // 
+            // Set_IM_location
+            // 
+            resources.ApplyResources(Set_IM_location, "Set_IM_location");
+            Set_IM_location.Name = "Set_IM_location";
+            Set_IM_location.UseVisualStyleBackColor = true;
+            Set_IM_location.Click += Set_IM_location_Click;
+            // 
+            // Show_IM_location
+            // 
+            resources.ApplyResources(Show_IM_location, "Show_IM_location");
+            Show_IM_location.Name = "Show_IM_location";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(label15, "label15");
+            label15.Name = "label15";
+            // 
+            // Set_GS_location
+            // 
+            resources.ApplyResources(Set_GS_location, "Set_GS_location");
+            Set_GS_location.Name = "Set_GS_location";
+            Set_GS_location.UseVisualStyleBackColor = true;
+            Set_GS_location.Click += Set_GS_location_Click;
+            // 
+            // Show_GS_location
+            // 
+            resources.ApplyResources(Show_GS_location, "Show_GS_location");
+            Show_GS_location.Name = "Show_GS_location";
+            // 
+            // label13
+            // 
+            resources.ApplyResources(label13, "label13");
+            label13.Name = "label13";
             // 
             // tabPage1
             // 
@@ -212,6 +266,7 @@
             // 
             // tabPage2
             // 
+            tabPage2.Controls.Add(Del_All_COM);
             tabPage2.Controls.Add(Set_PDF_COM_location);
             tabPage2.Controls.Add(Show_PDF_COM_location);
             tabPage2.Controls.Add(label9);
@@ -228,6 +283,13 @@
             resources.ApplyResources(tabPage2, "tabPage2");
             tabPage2.Name = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // Del_All_COM
+            // 
+            resources.ApplyResources(Del_All_COM, "Del_All_COM");
+            Del_All_COM.Name = "Del_All_COM";
+            Del_All_COM.UseVisualStyleBackColor = true;
+            Del_All_COM.Click += Del_All_COM_Click;
             // 
             // Set_PDF_COM_location
             // 
@@ -268,42 +330,49 @@
             resources.ApplyResources(Move_to_BOTTOM, "Move_to_BOTTOM");
             Move_to_BOTTOM.Name = "Move_to_BOTTOM";
             Move_to_BOTTOM.UseVisualStyleBackColor = true;
+            Move_to_BOTTOM.Click += Move_to_BOTTOM_Click;
             // 
             // Move_DOWN
             // 
             resources.ApplyResources(Move_DOWN, "Move_DOWN");
             Move_DOWN.Name = "Move_DOWN";
             Move_DOWN.UseVisualStyleBackColor = true;
+            Move_DOWN.Click += Move_DOWN_Click;
             // 
             // Move_UP
             // 
             resources.ApplyResources(Move_UP, "Move_UP");
             Move_UP.Name = "Move_UP";
             Move_UP.UseVisualStyleBackColor = true;
+            Move_UP.Click += Move_UP_Click;
             // 
             // Move_to_TOP
             // 
             resources.ApplyResources(Move_to_TOP, "Move_to_TOP");
             Move_to_TOP.Name = "Move_to_TOP";
             Move_to_TOP.UseVisualStyleBackColor = true;
+            Move_to_TOP.Click += Move_to_TOP_Click;
             // 
             // Del_com_PDF
             // 
             resources.ApplyResources(Del_com_PDF, "Del_com_PDF");
             Del_com_PDF.Name = "Del_com_PDF";
             Del_com_PDF.UseVisualStyleBackColor = true;
+            Del_com_PDF.Click += Del_com_PDF_Click;
             // 
             // add_com_pdf
             // 
             resources.ApplyResources(add_com_pdf, "add_com_pdf");
             add_com_pdf.Name = "add_com_pdf";
             add_com_pdf.UseVisualStyleBackColor = true;
+            add_com_pdf.Click += add_com_pdf_Click;
             // 
             // COM_PDF_list
             // 
             COM_PDF_list.FormattingEnabled = true;
             resources.ApplyResources(COM_PDF_list, "COM_PDF_list");
             COM_PDF_list.Name = "COM_PDF_list";
+            COM_PDF_list.SelectedIndexChanged += COM_PDF_list_SelectedIndexChanged;
             // 
             // tabPage3
             // 
@@ -499,12 +568,6 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // tabPage0
-            // 
-            resources.ApplyResources(tabPage0, "tabPage0");
-            tabPage0.Name = "tabPage0";
-            tabPage0.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -514,6 +577,8 @@
             Name = "Form1";
             Load += Form1_Load;
             tabControl1.ResumeLayout(false);
+            tabPage0.ResumeLayout(false);
+            tabPage0.PerformLayout();
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
@@ -589,5 +654,12 @@
         private Button button10;
         private ListBox listBox1;
         private TabPage tabPage0;
+        private Button Set_IM_location;
+        private TextBox Show_IM_location;
+        private Label label15;
+        private Button Set_GS_location;
+        private TextBox Show_GS_location;
+        private Label label13;
+        private Button Del_All_COM;
     }
 }
