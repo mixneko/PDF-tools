@@ -269,12 +269,26 @@ namespace PDF_tools
 
         private void Move_UP_Click(object sender, EventArgs e)
         {
-
+            int SelectItemIndex = COM_PDF_list.SelectedIndex;
+            if (SelectItemIndex >  0)
+            {
+                string SelectItem = COM_PDF_list.SelectedItem?.ToString();
+                COM_PDF_list.Items.RemoveAt(SelectItemIndex);
+                COM_PDF_list.Items.Insert(SelectItemIndex - 1, SelectItem);
+                COM_PDF_list.SelectedIndex = SelectItemIndex - 1; // 選擇被移動的項目
+            }
         }
 
         private void Move_DOWN_Click(object sender, EventArgs e)
         {
-
+            int SelectItemIndex = COM_PDF_list.SelectedIndex;
+            if (SelectItemIndex < COM_PDF_list.Items.Count - 1)
+            {
+                string SelectItem = COM_PDF_list.SelectedItem?.ToString();
+                COM_PDF_list.Items.RemoveAt(SelectItemIndex);
+                COM_PDF_list.Items.Insert(SelectItemIndex + 1, SelectItem);
+                COM_PDF_list.SelectedIndex = SelectItemIndex + 1; // 選擇被移動的項目
+            }
         }
 
         private void Move_to_BOTTOM_Click(object sender, EventArgs e)
