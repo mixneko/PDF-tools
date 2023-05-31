@@ -1861,6 +1861,36 @@
   <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="mixneko_link.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="mixneko_link.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mixneko_link.Location" type="System.Drawing.Point, System.Drawing">
+    <value>263, 125</value>
+  </data>
+  <data name="mixneko_link.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="mixneko_link.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="mixneko_link.Text" xml:space="preserve">
+    <value>mixneko</value>
+  </data>
+  <data name="&gt;&gt;mixneko_link.Name" xml:space="preserve">
+    <value>mixneko_link</value>
+  </data>
+  <data name="&gt;&gt;mixneko_link.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mixneko_link.Parent" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="&gt;&gt;mixneko_link.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2020,7 +2050,7 @@
     <value>about</value>
   </data>
   <data name="&gt;&gt;License.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 6</value>
@@ -2044,7 +2074,7 @@
     <value>about</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="flaticon_link.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft JhengHei UI, 11pt</value>
@@ -2074,7 +2104,7 @@
     <value>about</value>
   </data>
   <data name="&gt;&gt;flaticon_link.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="ImageMagick_link.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft JhengHei UI, 11pt</value>
@@ -2104,7 +2134,7 @@
     <value>about</value>
   </data>
   <data name="&gt;&gt;ImageMagick_link.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="GhostScript_link.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft JhengHei UI, 11pt</value>
@@ -2131,7 +2161,7 @@
     <value>about</value>
   </data>
   <data name="&gt;&gt;GhostScript_link.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2163,7 +2193,7 @@ PowerBy mixneko</value>
     <value>about</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="NameOfAuther.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2196,7 +2226,7 @@ PowerBy mixneko</value>
     <value>about</value>
   </data>
   <data name="&gt;&gt;NameOfAuther.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="about.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
