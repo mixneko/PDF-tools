@@ -92,6 +92,7 @@
             Add_ImagetoPDF_Source = new Button();
             IMGtoPDF_list = new ListBox();
             about = new TabPage();
+            mixneko_link = new LinkLabel();
             License = new GroupBox();
             label3 = new Label();
             label2 = new Label();
@@ -106,7 +107,6 @@
             openFileDialog1 = new OpenFileDialog();
             folderBrowserDialog1 = new FolderBrowserDialog();
             saveFileDialog1 = new SaveFileDialog();
-            mixneko_link = new LinkLabel();
             PDF_Compare.SuspendLayout();
             Env.SuspendLayout();
             PDFtoImage.SuspendLayout();
@@ -575,6 +575,13 @@
             about.Name = "about";
             about.UseVisualStyleBackColor = true;
             // 
+            // mixneko_link
+            // 
+            resources.ApplyResources(mixneko_link, "mixneko_link");
+            mixneko_link.Name = "mixneko_link";
+            mixneko_link.TabStop = true;
+            mixneko_link.LinkClicked += mixneko_link_LinkClicked;
+            // 
             // License
             // 
             License.Controls.Add(label3);
@@ -648,13 +655,6 @@
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // mixneko_link
-            // 
-            resources.ApplyResources(mixneko_link, "mixneko_link");
-            mixneko_link.Name = "mixneko_link";
-            mixneko_link.TabStop = true;
-            mixneko_link.LinkClicked += mixneko_link_LinkClicked;
             // 
             // Form1
             // 
