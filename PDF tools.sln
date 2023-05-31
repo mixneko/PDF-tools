@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDF tools", "PDF tools.csproj", "{BD94F72C-73D5-4E7D-BBE0-DF75EBB46A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDF tools", "PDF tools.csproj", "{BD94F72C-73D5-4E7D-BBE0-DF75EBB46A60}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\PDF app\Setup\Setup.vdproj", "{5A153B90-8AA1-4D83-B049-8763B1AF4EE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,8 @@ Global
 		{BD94F72C-73D5-4E7D-BBE0-DF75EBB46A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD94F72C-73D5-4E7D-BBE0-DF75EBB46A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD94F72C-73D5-4E7D-BBE0-DF75EBB46A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A153B90-8AA1-4D83-B049-8763B1AF4EE6}.Debug|Any CPU.ActiveCfg = Debug
+		{5A153B90-8AA1-4D83-B049-8763B1AF4EE6}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
