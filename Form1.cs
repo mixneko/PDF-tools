@@ -657,7 +657,7 @@ namespace PDF_tools
 
         private void Execute_IMGtoPDF_Click(object sender, EventArgs e)
         {
-            if(IMGtoPDF_list.Items.Count > 0 || Directory.Exists(Show_IMGtoPDF_SaveLocation.Text))
+            if (IMGtoPDF_list.Items.Count > 0 || Directory.Exists(Show_IMGtoPDF_SaveLocation.Text))
             {
                 if (File.Exists(GB.convert) == true)
                 {

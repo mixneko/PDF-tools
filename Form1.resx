@@ -1247,7 +1247,7 @@
     <value>4</value>
   </data>
   <data name="Set_End_Page.Text" xml:space="preserve">
-    <value>7</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;Set_End_Page.Name" xml:space="preserve">
     <value>Set_End_Page</value>
@@ -1304,7 +1304,7 @@
     <value>3</value>
   </data>
   <data name="Set_Start_Page.Text" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;Set_Start_Page.Name" xml:space="preserve">
     <value>Set_Start_Page</value>
