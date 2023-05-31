@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             tabControl1 = new TabControl();
-            tabPage0 = new TabPage();
+            Env = new TabPage();
             Set_IM_location = new Button();
             Show_IM_location = new TextBox();
             label15 = new Label();
@@ -53,19 +53,19 @@
             label1 = new Label();
             tabPage2 = new TabPage();
             Del_All_COM = new Button();
-            Set_PDF_COM_location = new Button();
-            Show_PDF_COM_location = new TextBox();
+            Set_PDF_Compare_location = new Button();
+            Show_PDF_Compare_location = new TextBox();
             label9 = new Label();
-            execute_PDF_Com = new Button();
+            execute_PDF_Compare = new Button();
             label6 = new Label();
-            textBox1 = new TextBox();
+            cmd_PDF_Compare = new TextBox();
             Move_to_BOTTOM = new Button();
             Move_DOWN = new Button();
             Move_UP = new Button();
             Move_to_TOP = new Button();
             Del_com_PDF = new Button();
             add_com_pdf = new Button();
-            COM_PDF_list = new ListBox();
+            Compare_PDF_list = new ListBox();
             tabPage3 = new TabPage();
             button3 = new Button();
             label12 = new Label();
@@ -99,7 +99,7 @@
             folderBrowserDialog1 = new FolderBrowserDialog();
             saveFileDialog1 = new SaveFileDialog();
             tabControl1.SuspendLayout();
-            tabPage0.SuspendLayout();
+            Env.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
             tabPage3.SuspendLayout();
@@ -108,7 +108,7 @@
             // 
             // tabControl1
             // 
-            tabControl1.Controls.Add(tabPage0);
+            tabControl1.Controls.Add(Env);
             tabControl1.Controls.Add(tabPage1);
             tabControl1.Controls.Add(tabPage2);
             tabControl1.Controls.Add(tabPage3);
@@ -120,17 +120,17 @@
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
             // 
-            // tabPage0
+            // Env
             // 
-            tabPage0.Controls.Add(Set_IM_location);
-            tabPage0.Controls.Add(Show_IM_location);
-            tabPage0.Controls.Add(label15);
-            tabPage0.Controls.Add(Set_GS_location);
-            tabPage0.Controls.Add(Show_GS_location);
-            tabPage0.Controls.Add(label13);
-            resources.ApplyResources(tabPage0, "tabPage0");
-            tabPage0.Name = "tabPage0";
-            tabPage0.UseVisualStyleBackColor = true;
+            Env.Controls.Add(Set_IM_location);
+            Env.Controls.Add(Show_IM_location);
+            Env.Controls.Add(label15);
+            Env.Controls.Add(Set_GS_location);
+            Env.Controls.Add(Show_GS_location);
+            Env.Controls.Add(label13);
+            resources.ApplyResources(Env, "Env");
+            Env.Name = "Env";
+            Env.UseVisualStyleBackColor = true;
             // 
             // Set_IM_location
             // 
@@ -267,19 +267,19 @@
             // tabPage2
             // 
             tabPage2.Controls.Add(Del_All_COM);
-            tabPage2.Controls.Add(Set_PDF_COM_location);
-            tabPage2.Controls.Add(Show_PDF_COM_location);
+            tabPage2.Controls.Add(Set_PDF_Compare_location);
+            tabPage2.Controls.Add(Show_PDF_Compare_location);
             tabPage2.Controls.Add(label9);
-            tabPage2.Controls.Add(execute_PDF_Com);
+            tabPage2.Controls.Add(execute_PDF_Compare);
             tabPage2.Controls.Add(label6);
-            tabPage2.Controls.Add(textBox1);
+            tabPage2.Controls.Add(cmd_PDF_Compare);
             tabPage2.Controls.Add(Move_to_BOTTOM);
             tabPage2.Controls.Add(Move_DOWN);
             tabPage2.Controls.Add(Move_UP);
             tabPage2.Controls.Add(Move_to_TOP);
             tabPage2.Controls.Add(Del_com_PDF);
             tabPage2.Controls.Add(add_com_pdf);
-            tabPage2.Controls.Add(COM_PDF_list);
+            tabPage2.Controls.Add(Compare_PDF_list);
             resources.ApplyResources(tabPage2, "tabPage2");
             tabPage2.Name = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
@@ -291,39 +291,41 @@
             Del_All_COM.UseVisualStyleBackColor = true;
             Del_All_COM.Click += Del_All_COM_Click;
             // 
-            // Set_PDF_COM_location
+            // Set_PDF_Compare_location
             // 
-            resources.ApplyResources(Set_PDF_COM_location, "Set_PDF_COM_location");
-            Set_PDF_COM_location.Name = "Set_PDF_COM_location";
-            Set_PDF_COM_location.UseVisualStyleBackColor = true;
+            resources.ApplyResources(Set_PDF_Compare_location, "Set_PDF_Compare_location");
+            Set_PDF_Compare_location.Name = "Set_PDF_Compare_location";
+            Set_PDF_Compare_location.UseVisualStyleBackColor = true;
+            Set_PDF_Compare_location.Click += Set_PDF_COM_location_Click;
             // 
-            // Show_PDF_COM_location
+            // Show_PDF_Compare_location
             // 
-            resources.ApplyResources(Show_PDF_COM_location, "Show_PDF_COM_location");
-            Show_PDF_COM_location.Name = "Show_PDF_COM_location";
+            resources.ApplyResources(Show_PDF_Compare_location, "Show_PDF_Compare_location");
+            Show_PDF_Compare_location.Name = "Show_PDF_Compare_location";
             // 
             // label9
             // 
             resources.ApplyResources(label9, "label9");
             label9.Name = "label9";
             // 
-            // execute_PDF_Com
+            // execute_PDF_Compare
             // 
-            resources.ApplyResources(execute_PDF_Com, "execute_PDF_Com");
-            execute_PDF_Com.Name = "execute_PDF_Com";
-            execute_PDF_Com.UseVisualStyleBackColor = true;
+            resources.ApplyResources(execute_PDF_Compare, "execute_PDF_Compare");
+            execute_PDF_Compare.Name = "execute_PDF_Compare";
+            execute_PDF_Compare.UseVisualStyleBackColor = true;
+            execute_PDF_Compare.Click += execute_PDF_Com_Click;
             // 
             // label6
             // 
             resources.ApplyResources(label6, "label6");
             label6.Name = "label6";
             // 
-            // textBox1
+            // cmd_PDF_Compare
             // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            resources.ApplyResources(textBox1, "textBox1");
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
+            cmd_PDF_Compare.BorderStyle = BorderStyle.FixedSingle;
+            resources.ApplyResources(cmd_PDF_Compare, "cmd_PDF_Compare");
+            cmd_PDF_Compare.Name = "cmd_PDF_Compare";
+            cmd_PDF_Compare.ReadOnly = true;
             // 
             // Move_to_BOTTOM
             // 
@@ -367,12 +369,12 @@
             add_com_pdf.UseVisualStyleBackColor = true;
             add_com_pdf.Click += add_com_pdf_Click;
             // 
-            // COM_PDF_list
+            // Compare_PDF_list
             // 
-            COM_PDF_list.FormattingEnabled = true;
-            resources.ApplyResources(COM_PDF_list, "COM_PDF_list");
-            COM_PDF_list.Name = "COM_PDF_list";
-            COM_PDF_list.SelectedIndexChanged += COM_PDF_list_SelectedIndexChanged;
+            Compare_PDF_list.FormattingEnabled = true;
+            resources.ApplyResources(Compare_PDF_list, "Compare_PDF_list");
+            Compare_PDF_list.Name = "Compare_PDF_list";
+            Compare_PDF_list.SelectedIndexChanged += COM_PDF_list_SelectedIndexChanged;
             // 
             // tabPage3
             // 
@@ -577,8 +579,8 @@
             Name = "Form1";
             Load += Form1_Load;
             tabControl1.ResumeLayout(false);
-            tabPage0.ResumeLayout(false);
-            tabPage0.PerformLayout();
+            Env.ResumeLayout(false);
+            Env.PerformLayout();
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();
             tabPage2.ResumeLayout(false);
@@ -614,7 +616,7 @@
         private SaveFileDialog saveFileDialog1;
         private ComboBox Output_IMG_DPI;
         private Label label5;
-        private ListBox COM_PDF_list;
+        private ListBox Compare_PDF_list;
         private Button Move_DOWN;
         private Button Move_UP;
         private Button Move_to_TOP;
@@ -622,16 +624,16 @@
         private Button add_com_pdf;
         private Button Move_to_BOTTOM;
         private Label label6;
-        private TextBox textBox1;
-        private Button execute_PDF_Com;
+        private TextBox cmd_PDF_Compare;
+        private Button execute_PDF_Compare;
         private Button Set_PDF_S_location;
         private TextBox Show_PDF_S_location;
         private Label label7;
         private Button button2;
         private TextBox ShowPDF_S_Source;
         private Label label8;
-        private Button Set_PDF_COM_location;
-        private TextBox Show_PDF_COM_location;
+        private Button Set_PDF_Compare_location;
+        private TextBox Show_PDF_Compare_location;
         private Label label9;
         private TextBox Set_Start_Page;
         private Label label10;
@@ -653,7 +655,7 @@
         private Button button9;
         private Button button10;
         private ListBox listBox1;
-        private TabPage tabPage0;
+        private TabPage Env;
         private Button Set_IM_location;
         private TextBox Show_IM_location;
         private Label label15;

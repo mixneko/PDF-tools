@@ -1,5 +1,7 @@
 using System.Diagnostics;
 using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Runtime.Intrinsics.Arm;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
@@ -29,9 +31,9 @@ namespace PDF_tools
             Move_DOWN.Enabled = false;
             Move_to_BOTTOM.Enabled = false;
             Del_All_COM.Enabled = false;
+            execute_PDF_Compare.Enabled = false;
             int err = 0;
             string err_value;
-            string programFilesPath = Environment.GetEnvironmentVariable("ProgramFiles");
             if (Directory.Exists(GB.gs_path) == false)
             {
                 err++;
@@ -77,20 +79,27 @@ namespace PDF_tools
             while (er)
             {
                 folderBrowserDialog1.SelectedPath = GB.programFilesPath + "\\gs\\";
-                if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+                switch (folderBrowserDialog1.ShowDialog())
                 {
-                    if (File.Exists(folderBrowserDialog1.SelectedPath + "\\gswin64c.exe") == false)
-                    {
-                        MessageBox.Show("此目錄未偵測到gswin64c.exe，請確認環境變數");
-                    }
-                    else if (File.Exists(folderBrowserDialog1.SelectedPath + "\\gswin64c.exe") == true)
-                    {
-                        MessageBox.Show("已成功偵測到gswin64c.exe，");
-                        Show_GS_location.Enabled = false;
-                        Set_GS_location.Enabled = false;
-                        Show_GS_location.Text = GB.gs;
+                    case DialogResult.OK:
+                        if (File.Exists(folderBrowserDialog1.SelectedPath + "\\gswin64c.exe") == false)
+                        {
+                            MessageBox.Show("此目錄未偵測到gswin64c.exe，請確認環境變數");
+                        }
+                        else if (File.Exists(folderBrowserDialog1.SelectedPath + "\\gswin64c.exe") == true)
+                        {
+                            MessageBox.Show("已成功偵測到gswin64c.exe，");
+                            Show_GS_location.Enabled = false;
+                            Set_GS_location.Enabled = false;
+                            Show_GS_location.Text = folderBrowserDialog1.SelectedPath + "\\gswin64c.exe";
+                            GB.gs = Show_GS_location.Text;
+                            GB.gs_path = folderBrowserDialog1.SelectedPath;
+                            er = false;
+                        }
+                        break;
+                    case DialogResult.Cancel:
                         er = false;
-                    }
+                        break;
                 }
             }
         }
@@ -100,20 +109,27 @@ namespace PDF_tools
             while (er)
             {
                 folderBrowserDialog1.SelectedPath = GB.programFilesPath + "\\ImageMagick\\";
-                if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+                switch (folderBrowserDialog1.ShowDialog())
                 {
-                    if (File.Exists(folderBrowserDialog1.SelectedPath + "\\convert.exe") == false)
-                    {
-                        MessageBox.Show("此目錄未偵測到convert.exe，請確認環境變數");
-                    }
-                    else if (File.Exists(folderBrowserDialog1.SelectedPath + "\\convert.exe") == true)
-                    {
-                        MessageBox.Show("已成功偵測到convert.exe，");
-                        Show_IM_location.Enabled = false;
-                        Set_IM_location.Enabled = false;
-                        Show_GS_location.Text = GB.convert;
+                    case DialogResult.OK:
+                        if (File.Exists(folderBrowserDialog1.SelectedPath + "\\convert.exe") == false)
+                        {
+                            MessageBox.Show("此目錄未偵測到convert.exe，請確認環境變數");
+                        }
+                        else if (File.Exists(folderBrowserDialog1.SelectedPath + "\\convert.exe") == true)
+                        {
+                            MessageBox.Show("已成功偵測到convert.exe，");
+                            Show_IM_location.Enabled = false;
+                            Set_IM_location.Enabled = false;
+                            Show_IM_location.Text = folderBrowserDialog1.SelectedPath + "\\convert.exe";
+                            GB.convert_path = folderBrowserDialog1.SelectedPath;
+                            GB.convert = Show_IM_location.Text;
+                            er = false;
+                        }
+                        break;
+                    case DialogResult.Cancel:
                         er = false;
-                    }
+                        break;
                 }
             }
         }
@@ -123,9 +139,26 @@ namespace PDF_tools
             openFileDialog1.Filter = "(*.PDF)|*.PDF";
             openFileDialog1.FileName = "";
             openFileDialog1.Multiselect = false;
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            bool er = true;
+            while (er)
             {
-                ShowPDF_I_Source.Text = openFileDialog1.FileName;
+                switch (openFileDialog1.ShowDialog())
+                {
+                    case DialogResult.OK:
+                        if (Path.GetExtension(openFileDialog1.FileName) == ".pdf")
+                        {
+                            ShowPDF_I_Source.Text = openFileDialog1.FileName;
+                            er = false;
+                        }
+                        else if ((Path.GetExtension(openFileDialog1.FileName) != ".pdf"))
+                        {
+                            MessageBox.Show("您輸入的檔案格式不受支援，請重新選擇。");
+                        }
+                        break;
+                    case DialogResult.Cancel:
+                        er = false;
+                        break;
+                }
             }
         }
 
@@ -175,7 +208,7 @@ namespace PDF_tools
                         break;
                 }
                 string bat_Name = @".\Pdf_tools_temp.bat";
-                using (StreamWriter sw = new StreamWriter(bat_Name))
+                using (StreamWriter sw = new(bat_Name))
                 {
                     sw.WriteLine("@echo off");
                     sw.WriteLine("chcp 65001");
@@ -196,112 +229,207 @@ namespace PDF_tools
                 cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
                 cmd.StartInfo.StandardOutputEncoding = System.Text.Encoding.UTF8;
                 cmd.StartInfo.StandardErrorEncoding = System.Text.Encoding.GetEncoding("big5");
-                StringBuilder cmdOutput = new StringBuilder();
+                StringBuilder cmdOutput = new();
                 cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
                 cmd.ErrorDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
                 cmd.Start();
                 cmd.BeginOutputReadLine();
                 cmd.BeginErrorReadLine();
                 cmd.WaitForExit();
-                if (cmd_PDFtoIMG.Text == "")
-                {
-                    cmd_PDFtoIMG.Text = cmdOutput.ToString();
-                }
-                else if (cmd_PDFtoIMG.Text != "")
-                {
-                    cmd_PDFtoIMG.Text = cmd_PDFtoIMG.Text + "\r\n" + cmdOutput.ToString();
-                }
+                cmd_PDFtoIMG.Text += cmdOutput.ToString() + "\r\n------------------------\r\n";
                 cmd.Close();
             }
         }
 
         private void COM_PDF_list_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string SelectItem = COM_PDF_list.SelectedItem?.ToString() ?? "";
-            if (SelectItem != "")
+            int Item = Compare_PDF_list.Items.Count;
+            switch (Item)
             {
-                Del_com_PDF.Enabled = true;
-                Move_UP.Enabled = true;
-                Move_to_TOP.Enabled = true;
-                Move_DOWN.Enabled = true;
-                Move_to_BOTTOM.Enabled = true;
-                Del_All_COM.Enabled = true;
-            }
-            else if (SelectItem == "")
-            {
-                Del_com_PDF.Enabled = false;
-                Move_UP.Enabled = false;
-                Move_to_TOP.Enabled = false;
-                Move_DOWN.Enabled = false;
-                Move_to_BOTTOM.Enabled = false;
-                Del_All_COM.Enabled = false;
+                case 0:
+                    Del_com_PDF.Enabled = false;
+                    Move_UP.Enabled = false;
+                    Move_to_TOP.Enabled = false;
+                    Move_DOWN.Enabled = false;
+                    Move_to_BOTTOM.Enabled = false;
+                    Del_All_COM.Enabled = false;
+                    execute_PDF_Compare.Enabled = false;
+                    break;
+                case 1:
+                    Del_com_PDF.Enabled = true;
+                    Move_UP.Enabled = false;
+                    Move_to_TOP.Enabled = false;
+                    Move_DOWN.Enabled = false;
+                    Move_to_BOTTOM.Enabled = false;
+                    Del_All_COM.Enabled = true;
+                    execute_PDF_Compare.Enabled = false;
+                    break;
+                case >= 2:
+                    Del_com_PDF.Enabled = true;
+                    Move_UP.Enabled = true;
+                    Move_to_TOP.Enabled = true;
+                    Move_DOWN.Enabled = true;
+                    Move_to_BOTTOM.Enabled = true;
+                    Del_All_COM.Enabled = true;
+                    execute_PDF_Compare.Enabled = true;
+                    break;
             }
         }
 
         private void add_com_pdf_Click(object sender, EventArgs e)
         {
+            bool er = true;
             openFileDialog1.Filter = "(*.PDF)|*.PDF";
             openFileDialog1.FileName = "";
             openFileDialog1.Multiselect = true;
-            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            while (er)
             {
-                COM_PDF_list.Items.AddRange(openFileDialog1.FileNames);
+                switch (openFileDialog1.ShowDialog())
+                {
+                    case DialogResult.OK:
+                        int Count = openFileDialog1.FileNames.Length;
+                        er = false;
+                        for (int i = 0; i <= Count; i++)
+                        {
+                            if ((Path.GetExtension(openFileDialog1.FileName) != ".pdf"))
+                            {
+                                er = true;
+                            }
+                        }
+                        if (er == false)
+                        {
+                            Compare_PDF_list.Items.AddRange(openFileDialog1.FileNames);
+                            Compare_PDF_list.SelectedIndex = Compare_PDF_list.Items.Count - 1;
+                        }
+                        else if (er == true)
+                        {
+                            MessageBox.Show("請不要插入非相關的東西");
+                        }
+                        break;
+                    case DialogResult.Cancel:
+                        er = false;
+                        break;
+                }
             }
         }
 
         private void Del_com_PDF_Click(object sender, EventArgs e)
         {
-            string SelectItem = COM_PDF_list.SelectedItem?.ToString() ?? "";
-            if (SelectItem != "")
+            int Item = Compare_PDF_list.SelectedIndex;
+            switch (Item)
             {
-                COM_PDF_list.Items.Remove(COM_PDF_list.SelectedItem);
+                case 0:
+                    Compare_PDF_list.Items.RemoveAt(Item);
+                    if (Compare_PDF_list.Items.Count > 0)
+                    {
+                        Compare_PDF_list.SelectedIndex = Item;
+                    }
+                    break;
+                case > 0:
+                    Compare_PDF_list.Items.RemoveAt(Item);
+                    Compare_PDF_list.SelectedIndex = Item - 1;
+                    break;
             }
-
         }
 
         private void Move_to_TOP_Click(object sender, EventArgs e)
         {
-            string SelectItem = COM_PDF_list.SelectedItem?.ToString();
-            COM_PDF_list.Items.Remove(SelectItem);
-            COM_PDF_list.Items.Insert(0, SelectItem);
-            COM_PDF_list.SelectedIndex = 0;
+            string SelectItem = Compare_PDF_list.SelectedItem?.ToString();
+            int Item = Compare_PDF_list.SelectedIndex;
+            Compare_PDF_list.Items.RemoveAt(Item);
+            Compare_PDF_list.Items.Insert(0, SelectItem);
+            Compare_PDF_list.SelectedIndex = 0;
         }
 
         private void Move_UP_Click(object sender, EventArgs e)
         {
-            int SelectItemIndex = COM_PDF_list.SelectedIndex;
-            if (SelectItemIndex >  0)
+            int SelectItemIndex = Compare_PDF_list.SelectedIndex;
+            if (SelectItemIndex > 0)
             {
-                string SelectItem = COM_PDF_list.SelectedItem?.ToString();
-                COM_PDF_list.Items.RemoveAt(SelectItemIndex);
-                COM_PDF_list.Items.Insert(SelectItemIndex - 1, SelectItem);
-                COM_PDF_list.SelectedIndex = SelectItemIndex - 1; // 選擇被移動的項目
+                string SelectItem = Compare_PDF_list.SelectedItem?.ToString();
+                Compare_PDF_list.Items.RemoveAt(SelectItemIndex);
+                Compare_PDF_list.Items.Insert(SelectItemIndex - 1, SelectItem);
+                Compare_PDF_list.SelectedIndex = SelectItemIndex - 1; // 選擇被移動的項目
             }
         }
 
         private void Move_DOWN_Click(object sender, EventArgs e)
         {
-            int SelectItemIndex = COM_PDF_list.SelectedIndex;
-            if (SelectItemIndex < COM_PDF_list.Items.Count - 1)
+            int SelectItemIndex = Compare_PDF_list.SelectedIndex;
+            if (SelectItemIndex < Compare_PDF_list.Items.Count - 1)
             {
-                string SelectItem = COM_PDF_list.SelectedItem?.ToString();
-                COM_PDF_list.Items.RemoveAt(SelectItemIndex);
-                COM_PDF_list.Items.Insert(SelectItemIndex + 1, SelectItem);
-                COM_PDF_list.SelectedIndex = SelectItemIndex + 1; // 選擇被移動的項目
+                string SelectItem = Compare_PDF_list.SelectedItem?.ToString();
+                Compare_PDF_list.Items.RemoveAt(SelectItemIndex);
+                Compare_PDF_list.Items.Insert(SelectItemIndex + 1, SelectItem);
+                Compare_PDF_list.SelectedIndex = SelectItemIndex + 1; // 選擇被移動的項目
             }
         }
 
         private void Move_to_BOTTOM_Click(object sender, EventArgs e)
         {
-            string SelectItem = COM_PDF_list.SelectedItem?.ToString();
-            COM_PDF_list.Items.Remove(SelectItem);
-            COM_PDF_list.Items.Insert(COM_PDF_list.Items.Count, SelectItem);
-            COM_PDF_list.SelectedIndex = COM_PDF_list.Items.Count - 1;
+            string SelectItem = Compare_PDF_list.SelectedItem?.ToString();
+            int Item = Compare_PDF_list.SelectedIndex;
+            Compare_PDF_list.Items.RemoveAt(Item);
+            Compare_PDF_list.Items.Insert(Compare_PDF_list.Items.Count, SelectItem);
+            Compare_PDF_list.SelectedIndex = Compare_PDF_list.Items.Count - 1;
         }
 
         private void Del_All_COM_Click(object sender, EventArgs e)
         {
-            COM_PDF_list.Items.Clear();
+            Compare_PDF_list.Items.Clear();
+        }
+
+        private void Set_PDF_COM_location_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "(*.PDF)|*.PDF";
+            saveFileDialog1.FileName = "";
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                Show_PDF_Compare_location.Text = saveFileDialog1.FileName;
+            }
+        }
+
+        private void execute_PDF_Com_Click(object sender, EventArgs e)
+        {
+            int L = Compare_PDF_list.Items.Count;
+            if (File.Exists(GB.gs) == true)
+            {
+                string bat_Name = @".\Pdf_tools_temp.bat";
+                StringBuilder WL = new StringBuilder($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dQUITE -sOutputFile=\"{Show_PDF_Compare_location.Text}\"");
+                for (int i = 0; i < L; i++)
+                {
+                    string InputFile = Compare_PDF_list.Items[i].ToString();
+                    WL.Append($" \"{InputFile}\"");
+                }
+                using (StreamWriter sw = new(bat_Name))
+                {
+                    sw.WriteLine("@echo off");
+                    sw.WriteLine("chcp 65001");
+                    sw.WriteLine(WL);
+                    sw.WriteLine("exit");
+                }
+                Process cmd = new();
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                cmd.StartInfo.FileName = "cmd.exe";
+                cmd.StartInfo.UseShellExecute = false;
+                cmd.StartInfo.RedirectStandardInput = true;
+                cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
+                cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
+                cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
+                cmd.Start();
+                cmd.StandardInput.WriteLine(WL);
+                cmd.StandardInput.Flush();
+                cmd.StandardInput.WriteLine("exit");
+                cmd_PDF_Compare.Text += cmd.StandardOutput.ReadToEnd() + "\r\n------------------------\r\n";
+                cmd.Close();
+            }
+            else if (File.Exists(GB.gs) == false)
+            {
+                MessageBox.Show("您尚未指定GhostScript路徑或GhostScript已被移動導致無法執行");
+                Set_GS_location.Enabled = true;
+                Show_GS_location.Enabled = true;
+                tabControl1.SelectedTab = Env;
+            }
         }
     }
 }
