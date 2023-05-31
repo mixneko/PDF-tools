@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_5113C003770D45DCAB333CBB2B89EA9E"
+        "MsmKey" = "8:_88BFEF447C254439858DEB0D46598F27"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -50,6 +50,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -181,16 +189,16 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:PDF tools Setup"
-        "ProductCode" = "8:{E7735D95-B70D-4C30-A8BE-CAADF8C1CFDC}"
-        "PackageCode" = "8:{A785ADBE-0EFA-4C06-B45D-2AFC01A3C1F2}"
+        "ProductName" = "8:PDF tools"
+        "ProductCode" = "8:{D69B8595-5FF3-4BBC-AC2E-2FB57A6D5252}"
+        "PackageCode" = "8:{ABE127B4-C5EB-4B95-9757-8D07AE266F6C}"
         "UpgradeCode" = "8:{327DEE85-4565-4D1D-AE0D-53C6B8BEDF4E}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.5"
+        "ProductVersion" = "8:1.0.6"
         "Manufacturer" = "8:mixneko"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -311,13 +319,13 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_5113C003770D45DCAB333CBB2B89EA9E"
+            "Target" = "8:_88BFEF447C254439858DEB0D46598F27"
             "Folder" = "8:_013A88EEA69A4073A1B64EC71B49D4EA"
             "WorkingFolder" = "8:_83E5B8BD56314A16A7C5B7D7A0B28394"
             "Icon" = "8:"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DF4796D8F17C4ABCBADED43294E07978"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_BBC78702150A411B83CA99EB6DCDFAF4"
             {
             "Name" = "8:PDF tools"
             "Arguments" = "8:"
@@ -325,7 +333,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_5113C003770D45DCAB333CBB2B89EA9E"
+            "Target" = "8:_88BFEF447C254439858DEB0D46598F27"
             "Folder" = "8:_4E51E0F4C75E49C2B90DCB879818A74A"
             "WorkingFolder" = "8:_83E5B8BD56314A16A7C5B7D7A0B28394"
             "Icon" = "8:_C418D44316AA4F8684B3947BEE4CBE14"
@@ -730,9 +738,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5113C003770D45DCAB333CBB2B89EA9E"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_88BFEF447C254439858DEB0D46598F27"
             {
-            "SourcePath" = "8:..\\obj\\Debug\\net6.0-windows\\PDF tools.dll"
+            "SourcePath" = "8:..\\obj\\Debug\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_83E5B8BD56314A16A7C5B7D7A0B28394"
@@ -751,7 +759,7 @@
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
             "OutputConfiguration" = "8:"
-            "OutputGroupCanonicalName" = "8:Built"
+            "OutputGroupCanonicalName" = "8:PublishItems"
             "OutputProjectGuid" = "8:{BD94F72C-73D5-4E7D-BBE0-DF75EBB46A60}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
