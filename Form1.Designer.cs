@@ -92,6 +92,12 @@
             Add_ImagetoPDF_Source = new Button();
             IMGtoPDF_list = new ListBox();
             about = new TabPage();
+            License = new GroupBox();
+            label3 = new Label();
+            label2 = new Label();
+            ImageMagick_License = new TextBox();
+            GhostScript_License = new TextBox();
+            pictureBox1 = new PictureBox();
             flaticon_link = new LinkLabel();
             ImageMagick_link = new LinkLabel();
             GhostScript_link = new LinkLabel();
@@ -100,12 +106,7 @@
             openFileDialog1 = new OpenFileDialog();
             folderBrowserDialog1 = new FolderBrowserDialog();
             saveFileDialog1 = new SaveFileDialog();
-            pictureBox1 = new PictureBox();
-            License = new GroupBox();
-            GhostScript_License = new TextBox();
-            ImageMagick_License = new TextBox();
-            label2 = new Label();
-            label3 = new Label();
+            mixneko_link = new LinkLabel();
             PDF_Compare.SuspendLayout();
             Env.SuspendLayout();
             PDFtoImage.SuspendLayout();
@@ -113,8 +114,8 @@
             PDF_Split.SuspendLayout();
             tabPage4.SuspendLayout();
             about.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             License.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // PDF_Compare
@@ -562,6 +563,7 @@
             // 
             // about
             // 
+            about.Controls.Add(mixneko_link);
             about.Controls.Add(License);
             about.Controls.Add(pictureBox1);
             about.Controls.Add(flaticon_link);
@@ -572,6 +574,45 @@
             resources.ApplyResources(about, "about");
             about.Name = "about";
             about.UseVisualStyleBackColor = true;
+            // 
+            // License
+            // 
+            License.Controls.Add(label3);
+            License.Controls.Add(label2);
+            License.Controls.Add(ImageMagick_License);
+            License.Controls.Add(GhostScript_License);
+            resources.ApplyResources(License, "License");
+            License.Name = "License";
+            License.TabStop = false;
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
+            // 
+            // ImageMagick_License
+            // 
+            resources.ApplyResources(ImageMagick_License, "ImageMagick_License");
+            ImageMagick_License.Name = "ImageMagick_License";
+            ImageMagick_License.ReadOnly = true;
+            // 
+            // GhostScript_License
+            // 
+            resources.ApplyResources(GhostScript_License, "GhostScript_License");
+            GhostScript_License.Name = "GhostScript_License";
+            GhostScript_License.ReadOnly = true;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.pdf;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.TabStop = false;
             // 
             // flaticon_link
             // 
@@ -608,44 +649,12 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // pictureBox1
+            // mixneko_link
             // 
-            pictureBox1.Image = Properties.Resources.pdf;
-            resources.ApplyResources(pictureBox1, "pictureBox1");
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.TabStop = false;
-            // 
-            // License
-            // 
-            License.Controls.Add(label3);
-            License.Controls.Add(label2);
-            License.Controls.Add(ImageMagick_License);
-            License.Controls.Add(GhostScript_License);
-            resources.ApplyResources(License, "License");
-            License.Name = "License";
-            License.TabStop = false;
-            // 
-            // GhostScript_License
-            // 
-            resources.ApplyResources(GhostScript_License, "GhostScript_License");
-            GhostScript_License.Name = "GhostScript_License";
-            GhostScript_License.ReadOnly = true;
-            // 
-            // ImageMagick_License
-            // 
-            resources.ApplyResources(ImageMagick_License, "ImageMagick_License");
-            ImageMagick_License.Name = "ImageMagick_License";
-            ImageMagick_License.ReadOnly = true;
-            // 
-            // label2
-            // 
-            resources.ApplyResources(label2, "label2");
-            label2.Name = "label2";
-            // 
-            // label3
-            // 
-            resources.ApplyResources(label3, "label3");
-            label3.Name = "label3";
+            resources.ApplyResources(mixneko_link, "mixneko_link");
+            mixneko_link.Name = "mixneko_link";
+            mixneko_link.TabStop = true;
+            mixneko_link.LinkClicked += mixneko_link_LinkClicked;
             // 
             // Form1
             // 
@@ -668,9 +677,9 @@
             tabPage4.PerformLayout();
             about.ResumeLayout(false);
             about.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             License.ResumeLayout(false);
             License.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -753,5 +762,6 @@
         private TextBox GhostScript_License;
         private Label label3;
         private Label label2;
+        private LinkLabel mixneko_link;
     }
 }

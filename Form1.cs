@@ -534,42 +534,49 @@ namespace PDF_tools
 
         private void Execute_PDF_Split_Click(object sender, EventArgs e)
         {
-            int Start_Page = int.Parse(Set_Start_Page.Text);
-            int End_Page = int.Parse(Set_End_Page.Text);
-            if (Start_Page > End_Page)
+            if (File.Exists(Show_PDF_Split_Source.Text) && File.Exists(Show_PDF_Split_SaveLocation.Text))
             {
-                (End_Page, Start_Page) = (Start_Page, End_Page);
+                int Start_Page = int.Parse(Set_Start_Page.Text);
+                int End_Page = int.Parse(Set_End_Page.Text);
+                if (Start_Page > End_Page)
+                {
+                    (End_Page, Start_Page) = (Start_Page, End_Page);
+                }
+                if (File.Exists(GB.gs) == true)
+                {
+                    StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" + Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" + Show_PDF_Split_SaveLocation.Text + "\" \"" + Show_PDF_Split_Source.Text + "\"");
+                    Process cmd = new();
+                    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                    cmd.StartInfo.FileName = "cmd.exe";
+                    cmd.StartInfo.UseShellExecute = false;
+                    cmd.StartInfo.RedirectStandardInput = true;
+                    cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
+                    cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
+                    cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
+                    StringBuilder cmdOutput = new();
+                    cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
+                    cmd.Start();
+                    cmd.BeginOutputReadLine();
+                    cmd.StandardInput.WriteLine(WL);
+                    cmd.StandardInput.Flush();
+                    cmd.StandardInput.WriteLine("exit");
+                    cmd.WaitForExit();
+                    cmd_PDF_Split.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
+                    cmd_IMGtoPDF.SelectionStart = cmd_IMGtoPDF.Text.Length;
+                    cmd_IMGtoPDF.ScrollToCaret();
+                    cmd.Close();
+                }
+                else if (File.Exists(GB.gs) == false)
+                {
+                    MessageBox.Show("您尚未指定GhostScript路徑或GhostScript已被移動導致無法執行");
+                    Set_GS_location.Enabled = true;
+                    Show_GS_location.Enabled = true;
+                    PDF_Compare.SelectedTab = Env;
+                }
             }
-            if (File.Exists(GB.gs) == true)
+            else
             {
-                StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" + Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" + Show_PDF_Split_SaveLocation.Text + "\" \"" + Show_PDF_Split_Source.Text + "\"");
-                Process cmd = new();
-                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                cmd.StartInfo.FileName = "cmd.exe";
-                cmd.StartInfo.UseShellExecute = false;
-                cmd.StartInfo.RedirectStandardInput = true;
-                cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
-                cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
-                cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
-                StringBuilder cmdOutput = new();
-                cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
-                cmd.Start();
-                cmd.BeginOutputReadLine();
-                cmd.StandardInput.WriteLine(WL);
-                cmd.StandardInput.Flush();
-                cmd.StandardInput.WriteLine("exit");
-                cmd.WaitForExit();
-                cmd_PDF_Split.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
-                cmd_IMGtoPDF.SelectionStart = cmd_IMGtoPDF.Text.Length;
-                cmd_IMGtoPDF.ScrollToCaret();
-                cmd.Close();
-            }
-            else if (File.Exists(GB.gs) == false)
-            {
-                MessageBox.Show("您尚未指定GhostScript路徑或GhostScript已被移動導致無法執行");
-                Set_GS_location.Enabled = true;
-                Show_GS_location.Enabled = true;
-                PDF_Compare.SelectedTab = Env;
+                MessageBox.Show("尚未完成應有資訊之輸入");
             }
         }
 
@@ -650,43 +657,50 @@ namespace PDF_tools
 
         private void Execute_IMGtoPDF_Click(object sender, EventArgs e)
         {
-            if (File.Exists(GB.convert) == true)
+            if(IMGtoPDF_list.Items.Count > 0 || Directory.Exists(Show_IMGtoPDF_SaveLocation.Text))
             {
-                int i;
-                for (i = 0; i < IMGtoPDF_list.Items.Count; i++)
+                if (File.Exists(GB.convert) == true)
                 {
-                    Process cmd = new();
-                    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                    cmd.StartInfo.FileName = "cmd.exe";
-                    cmd.StartInfo.UseShellExecute = false;
-                    cmd.StartInfo.RedirectStandardInput = true;
-                    cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
-                    cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
-                    cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
-                    StringBuilder cmdOutput = new();
-                    cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
-                    cmd.Start();
-                    cmd.BeginOutputReadLine();
-                    string item = IMGtoPDF_list.Items[i]?.ToString() ?? "";
-                    string FileName = Path.GetFileNameWithoutExtension(item);
-                    string WL = "\"" + GB.convert + "\" \"" + item + "\" \"" + Show_IMGtoPDF_SaveLocation.Text + "\\" + FileName + ".pdf\"";
-                    cmd.StandardInput.WriteLine(WL);
-                    cmd.StandardInput.Flush();
-                    cmd.StandardInput.WriteLine("exit");
-                    cmd.WaitForExit();
-                    cmd_IMGtoPDF.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
-                    cmd_IMGtoPDF.SelectionStart = cmd_IMGtoPDF.Text.Length;
-                    cmd_IMGtoPDF.ScrollToCaret();
-                    cmd.Close();
+                    int i;
+                    for (i = 0; i < IMGtoPDF_list.Items.Count; i++)
+                    {
+                        Process cmd = new();
+                        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                        cmd.StartInfo.FileName = "cmd.exe";
+                        cmd.StartInfo.UseShellExecute = false;
+                        cmd.StartInfo.RedirectStandardInput = true;
+                        cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
+                        cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
+                        cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
+                        StringBuilder cmdOutput = new();
+                        cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
+                        cmd.Start();
+                        cmd.BeginOutputReadLine();
+                        string item = IMGtoPDF_list.Items[i]?.ToString() ?? "";
+                        string FileName = Path.GetFileNameWithoutExtension(item);
+                        string WL = "\"" + GB.convert + "\" \"" + item + "\" \"" + Show_IMGtoPDF_SaveLocation.Text + "\\" + FileName + ".pdf\"";
+                        cmd.StandardInput.WriteLine(WL);
+                        cmd.StandardInput.Flush();
+                        cmd.StandardInput.WriteLine("exit");
+                        cmd.WaitForExit();
+                        cmd_IMGtoPDF.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
+                        cmd_IMGtoPDF.SelectionStart = cmd_IMGtoPDF.Text.Length;
+                        cmd_IMGtoPDF.ScrollToCaret();
+                        cmd.Close();
+                    }
+                    MessageBox.Show("已全部轉換完畢。");
                 }
-                MessageBox.Show("已全部轉換完畢。");
+                else if (File.Exists(GB.convert) == false)
+                {
+                    MessageBox.Show("您尚未指定ImageMagick路徑或ImageMagick中的convert.exe已被移動或不存在導致無法執行");
+                    Set_IM_location.Enabled = true;
+                    Show_IM_location.Enabled = true;
+                    PDF_Compare.SelectedTab = Env;
+                }
             }
-            else if (File.Exists(GB.convert) == false)
+            else
             {
-                MessageBox.Show("您尚未指定ImageMagick路徑或ImageMagick中的convert.exe已被移動或不存在導致無法執行");
-                Set_IM_location.Enabled = true;
-                Show_IM_location.Enabled = true;
-                PDF_Compare.SelectedTab = Env;
+                MessageBox.Show("尚未完成應有資訊之輸入");
             }
         }
 
@@ -705,6 +719,12 @@ namespace PDF_tools
         private void flaticon_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             string target = "https://www.flaticon.com/free-icon/pdf_1644129";
+            VisitLink(target);
+        }
+
+        private void mixneko_link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string target = "https://github.com/mixneko/PDF-tools";
             VisitLink(target);
         }
 
