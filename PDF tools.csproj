@@ -9,6 +9,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageIcon>pdf.png</PackageIcon>
     <ApplicationIcon>pdf.ico</ApplicationIcon>
+    <Platforms>AnyCPU;x64</Platforms>
+    <SignAssembly>False</SignAssembly>
   </PropertyGroup>
 
   <ItemGroup>

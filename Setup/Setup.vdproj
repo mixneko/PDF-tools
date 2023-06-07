@@ -82,6 +82,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -190,15 +198,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PDF tools"
-        "ProductCode" = "8:{D69B8595-5FF3-4BBC-AC2E-2FB57A6D5252}"
-        "PackageCode" = "8:{ABE127B4-C5EB-4B95-9757-8D07AE266F6C}"
+        "ProductCode" = "8:{A00E4B7D-0335-4BA8-B1E8-528576DFAB72}"
+        "PackageCode" = "8:{FAD6D665-2388-4EE1-98EF-894C0BB0316E}"
         "UpgradeCode" = "8:{327DEE85-4565-4D1D-AE0D-53C6B8BEDF4E}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.6"
+        "ProductVersion" = "8:1.1.0"
         "Manufacturer" = "8:mixneko"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -208,7 +216,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:PDF tools"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_C418D44316AA4F8684B3947BEE4CBE14"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -740,7 +748,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_88BFEF447C254439858DEB0D46598F27"
             {
-            "SourcePath" = "8:..\\obj\\Debug\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\obj\\x64\\Release\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_83E5B8BD56314A16A7C5B7D7A0B28394"

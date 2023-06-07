@@ -13,10 +13,14 @@ namespace PDF_tools
         public static class GB
         {
             public static string programFilesPath = Environment.GetEnvironmentVariable("ProgramFiles");
-            public static string gs_path = programFilesPath + "\\gs\\bin";
-            public static string gs = programFilesPath + "\\gs\\bin\\gswin64c.exe";
-            public static string convert_path = programFilesPath + "\\ImageMagick";
-            public static string convert = programFilesPath + "\\ImageMagick\\convert.exe";
+            public static string gs_path = programFilesPath + @"\gs\bin";
+            public static string gs = gs_path + @"\gswin64c.exe";
+            public static string convert_path = programFilesPath + @"\ImageMagick";
+            public static string convert = convert_path + @"\convert.exe";
+            public static string Setting_path = Environment.GetEnvironmentVariable("AppData") + @"\PDF_tools";
+            public static string Setting_file = Setting_path + @"\setting.ini";
+            public static bool gs_read = false;
+            public static bool convert_read = false;
         }
         public Form1()
         {
@@ -32,7 +36,51 @@ namespace PDF_tools
             Move_DOWN.Enabled = false;
             Move_to_BOTTOM.Enabled = false;
             Del_All_COM.Enabled = false;
+            if (Directory.Exists(GB.Setting_path) == false)
+            {
+                Directory.CreateDirectory(GB.Setting_path);
+            }
             execute_PDF_Compare.Enabled = false;
+            try
+            {
+                if (File.Exists($"{GB.Setting_file}"))
+                {
+                    foreach (var line in File.ReadLines($"{GB.Setting_file}"))
+                    {
+                        // 將每一行分割成鍵和值
+                        var parts = line.Split('=');
+                        if (parts.Length == 2)
+                        {
+                            var key = parts[0].Trim();
+                            var value = parts[1].Trim();
+
+                            // 根據鍵來處理值
+                            switch (key)
+                            {
+                                case "GS":
+                                    // 處理 GS 的值
+                                    GB.gs = value;
+                                    GB.gs_path = Path.GetDirectoryName(value);
+                                    break;
+                                case "IM":
+                                    // 處理 IM 的值
+                                    GB.convert = value;
+                                    GB.convert_path = Path.GetDirectoryName(value);
+                                    break;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    File.Create($"{GB.Setting_file}").Close();
+                    Setting();
+                }
+            }
+            catch (Exception i)
+            {
+                MessageBox.Show(i.Message);
+            }
             int err = 0;
             string err_value;
             if (Directory.Exists(GB.gs_path) == false)
@@ -74,6 +122,21 @@ namespace PDF_tools
             }
         }
 
+        private static void Setting()
+        {
+            string gsValue = GB.gs.ToString();
+            string imValue = GB.convert.ToString();
+            string data = $"GS={gsValue}\nIM={imValue}";
+            try
+            {
+                File.WriteAllText($"{GB.Setting_file}", data);
+            }
+            catch (Exception i)
+            {
+                MessageBox.Show(i.Message);
+            }
+        }
+
         private void Set_GS_location_Click(object sender, EventArgs e)
         {
             bool er = true;
@@ -96,6 +159,7 @@ namespace PDF_tools
                             GB.gs = Show_GS_location.Text;
                             GB.gs_path = folderBrowserDialog1.SelectedPath;
                             er = false;
+                            Setting();
                         }
                         break;
                     case DialogResult.Cancel:
@@ -126,6 +190,7 @@ namespace PDF_tools
                             GB.convert_path = folderBrowserDialog1.SelectedPath;
                             GB.convert = Show_IM_location.Text;
                             er = false;
+                            Setting();
                         }
                         break;
                     case DialogResult.Cancel:
