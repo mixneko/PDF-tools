@@ -202,7 +202,7 @@ namespace PDF_tools
 
         private void SelectPDFSource_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "(*.PDF)|*.PDF";
+            openFileDialog1.Filter = "(*.pdf)|*.pdf";
             openFileDialog1.FileName = "";
             openFileDialog1.Multiselect = false;
             bool er = true;
