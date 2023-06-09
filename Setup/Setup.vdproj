@@ -198,15 +198,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PDF tools"
-        "ProductCode" = "8:{A00E4B7D-0335-4BA8-B1E8-528576DFAB72}"
-        "PackageCode" = "8:{FAD6D665-2388-4EE1-98EF-894C0BB0316E}"
+        "ProductCode" = "8:{C92C62C0-619A-4CE2-9ED1-DD1BCA368212}"
+        "PackageCode" = "8:{439F00B8-23B5-44D5-B6E2-2B140655B656}"
         "UpgradeCode" = "8:{327DEE85-4565-4D1D-AE0D-53C6B8BEDF4E}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.1.0"
+        "ProductVersion" = "8:1.1.5"
         "Manufacturer" = "8:mixneko"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -748,7 +748,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_88BFEF447C254439858DEB0D46598F27"
             {
-            "SourcePath" = "8:..\\obj\\x64\\Release\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:..\\obj\\Debug\\net6.0-windows\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_83E5B8BD56314A16A7C5B7D7A0B28394"

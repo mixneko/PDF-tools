@@ -310,8 +310,8 @@ namespace PDF_tools
                 cmd.BeginErrorReadLine();
                 cmd.WaitForExit();
                 cmd_PDFtoIMG.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
-                cmd_IMGtoPDF.SelectionStart = cmd_IMGtoPDF.Text.Length;
-                cmd_IMGtoPDF.ScrollToCaret();
+                cmd_PDFtoIMG.SelectionStart = cmd_PDFtoIMG.Text.Length;
+                cmd_PDFtoIMG.ScrollToCaret();
                 cmd.Close();
                 File.Delete(bat_Name);
             }
@@ -512,9 +512,9 @@ namespace PDF_tools
                 cmd.StandardInput.Flush();
                 cmd.StandardInput.WriteLine("exit");
                 cmd.WaitForExit();
-                cmd_PDF_Split.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
-                cmd_IMGtoPDF.SelectionStart = cmd_IMGtoPDF.Text.Length;
-                cmd_IMGtoPDF.ScrollToCaret();
+                cmd_PDF_Compare.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
+                cmd_PDF_Compare.SelectionStart = cmd_PDF_Compare.Text.Length;
+                cmd_PDF_Compare.ScrollToCaret();
                 cmd.Close();
             }
             else if (File.Exists(GB.gs) == false)
@@ -571,7 +571,7 @@ namespace PDF_tools
 
         private void Set_PDF_Split_location_Click(object sender, EventArgs e)
         {
-            saveFileDialog1.Filter = "(*.PDF)|*.PDF";
+            saveFileDialog1.Filter = "(*.pdf)|*.pdf";
             saveFileDialog1.FileName = "";
             bool er = true;
             while (er)
@@ -579,12 +579,13 @@ namespace PDF_tools
                 switch (saveFileDialog1.ShowDialog())
                 {
                     case DialogResult.OK:
-                        if (Path.GetExtension(saveFileDialog1.FileName) == ".pdf")
+                        string fileExtension = Path.GetExtension(saveFileDialog1.FileName);
+                        if (string.Equals(fileExtension, ".pdf", StringComparison.OrdinalIgnoreCase))
                         {
                             Show_PDF_Split_SaveLocation.Text = saveFileDialog1.FileName;
                             er = false;
                         }
-                        else if ((Path.GetExtension(saveFileDialog1.FileName) != ".pdf"))
+                        else
                         {
                             Show_PDF_Split_SaveLocation.Text = saveFileDialog1.FileName + ".pdf";
                             er = false;
@@ -599,49 +600,56 @@ namespace PDF_tools
 
         private void Execute_PDF_Split_Click(object sender, EventArgs e)
         {
-            if (File.Exists(Show_PDF_Split_Source.Text) && File.Exists(Show_PDF_Split_SaveLocation.Text))
+            if (File.Exists(Show_PDF_Split_Source.Text))
             {
-                int Start_Page = int.Parse(Set_Start_Page.Text);
-                int End_Page = int.Parse(Set_End_Page.Text);
-                if (Start_Page > End_Page)
+                if (Show_PDF_Split_Source.Text != "" && Show_PDF_Split_SaveLocation.Text !="")
                 {
-                    (End_Page, Start_Page) = (Start_Page, End_Page);
+                    int Start_Page = int.Parse(Set_Start_Page.Text);
+                    int End_Page = int.Parse(Set_End_Page.Text);
+                    if (Start_Page > End_Page)
+                    {
+                        (End_Page, Start_Page) = (Start_Page, End_Page);
+                    }
+                    if (File.Exists(GB.gs) == true)
+                    {
+                        StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" + Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" + Show_PDF_Split_SaveLocation.Text + "\" \"" + Show_PDF_Split_Source.Text + "\"");
+                        Process cmd = new();
+                        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                        cmd.StartInfo.FileName = "cmd.exe";
+                        cmd.StartInfo.UseShellExecute = false;
+                        cmd.StartInfo.RedirectStandardInput = true;
+                        cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
+                        cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
+                        cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
+                        StringBuilder cmdOutput = new();
+                        cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
+                        cmd.Start();
+                        cmd.BeginOutputReadLine();
+                        cmd.StandardInput.WriteLine(WL);
+                        cmd.StandardInput.Flush();
+                        cmd.StandardInput.WriteLine("exit");
+                        cmd.WaitForExit();
+                        cmd_PDF_Split.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
+                        cmd_PDF_Split.SelectionStart = cmd_PDF_Split.Text.Length;
+                        cmd_PDF_Split.ScrollToCaret();
+                        cmd.Close();
+                    }
+                    else if (File.Exists(GB.gs) == false)
+                    {
+                        MessageBox.Show("您尚未指定GhostScript路徑或GhostScript已被移動導致無法執行");
+                        Set_GS_location.Enabled = true;
+                        Show_GS_location.Enabled = true;
+                        PDF_Compare.SelectedTab = Env;
+                    }
                 }
-                if (File.Exists(GB.gs) == true)
+                else
                 {
-                    StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" + Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" + Show_PDF_Split_SaveLocation.Text + "\" \"" + Show_PDF_Split_Source.Text + "\"");
-                    Process cmd = new();
-                    Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                    cmd.StartInfo.FileName = "cmd.exe";
-                    cmd.StartInfo.UseShellExecute = false;
-                    cmd.StartInfo.RedirectStandardInput = true;
-                    cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
-                    cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
-                    cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
-                    StringBuilder cmdOutput = new();
-                    cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
-                    cmd.Start();
-                    cmd.BeginOutputReadLine();
-                    cmd.StandardInput.WriteLine(WL);
-                    cmd.StandardInput.Flush();
-                    cmd.StandardInput.WriteLine("exit");
-                    cmd.WaitForExit();
-                    cmd_PDF_Split.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
-                    cmd_IMGtoPDF.SelectionStart = cmd_IMGtoPDF.Text.Length;
-                    cmd_IMGtoPDF.ScrollToCaret();
-                    cmd.Close();
-                }
-                else if (File.Exists(GB.gs) == false)
-                {
-                    MessageBox.Show("您尚未指定GhostScript路徑或GhostScript已被移動導致無法執行");
-                    Set_GS_location.Enabled = true;
-                    Show_GS_location.Enabled = true;
-                    PDF_Compare.SelectedTab = Env;
+                    MessageBox.Show("尚未完成應有資訊之輸入");
                 }
             }
             else
             {
-                MessageBox.Show("尚未完成應有資訊之輸入");
+                MessageBox.Show("指定之來源PDF不存在");
             }
         }
 
