@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <PackageIcon>pdf.png</PackageIcon>
+    <PackageIcon>pdf.ico</PackageIcon>
     <ApplicationIcon>pdf.ico</ApplicationIcon>
     <Platforms>AnyCPU;x64</Platforms>
     <SignAssembly>False</SignAssembly>
