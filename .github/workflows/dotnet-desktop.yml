@@ -1,0 +1,37 @@
+name: .NET Desktop CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  solution: 'PDF tools/PDF tools.sln'
+  buildPlatform: 'x64'
+  buildConfiguration: 'Release'
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: Restore dependencies
+      run: dotnet restore ${{env.solution}}
+
+    - name: Build
+      run: dotnet build "PDF tools/PDF tools.csproj" --no-restore --configuration ${{env.buildConfiguration}} 
+
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+    - name: Publish
+      run: dotnet publish --no-build --configuration ${{env.buildConfiguration}} --output ./publish
+      
