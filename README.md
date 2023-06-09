@@ -1,11 +1,26 @@
 # PDF tools
-整合 GhostScript 及 ImageMagick 後最強大的工具
+這是一個整合了 GhostScript 和 ImageMagick，專為處理 PDF 檔案所製作的實用工具。
+
+PDF Tools 可以幫助你輕鬆地轉換、合併、分割 PDF 文件，以及將圖片轉換回 PDF。不管你是需要處理大量的 PDF 文件，還是只是偶爾需要轉換幾個文件，PDF Tools 都能讓你的工作變得更輕鬆。
+
+## 目錄
+- [硬體需求](#硬體需求)
+- [安裝依賴](#安裝依賴)
+- [使用](#使用)
+    - [設定環境變數](#設定環境變數)
+    - [將 PDF 轉換成圖片](#將-PDF-轉換成圖片)
+    - [合併 PDF](#合併-PDF)
+    - [分割 PDF](#分割-PDF)
+    - [將圖片轉回 PDF](#將圖片轉回-PDF)
+- [截圖](#截圖)
+- [捐獻](#捐獻)
+- [授權](#授權)
 
 ## 硬體需求
-64位元之 Windows
+本工具需要 64 位元的 Windows 系統。建議有至少 4 GB 的 RAM 以確保順暢運作。
 
 ## 安裝依賴
-必須先安裝 [GhostScript](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases) 以及包含 convert 之 [ImageMagick](https://imagemagick.org/script/download.php#windows) 套件
+使用此程式前您必須先安裝 [GhostScript](https://github.com/ArtifexSoftware/ghostpdl-downloads/releases) 以及包含 convert 之 [ImageMagick](https://imagemagick.org/script/download.php#windows) 套件
 然後記住你安裝的位置，在檔案執行時需指定至該位置
 
 ## 使用
@@ -24,13 +39,11 @@
 ![圖片轉 PDF](https://github.com/mixneko/PDF-tools/assets/12106753/871085a8-a86e-4b8f-89b5-1e0624497e3d)
 
 ## 捐獻
-若您覺得此專案有幫助到您請打賞好讓這些程式能繼續受到維護
+如果你發現這個專案有幫助，歡迎你透過以下方式贊助，你的支持會讓這個專案能持續維護和改善。
 
-BTC-BSC：0x974F80a64289b13C4735b9c4c441abDdd03b445e
-
-ETH-BSC：0x974F80a64289b13C4735b9c4c441abDdd03b445e
-
-USDT-TRC20：TD4wFGZMVwQDZA3VUj6X3XBgDJjBEPSQyi
+- BTC-BSC：0x974F80a64289b13C4735b9c4c441abDdd03b445e
+- ETH-BSC：0x974F80a64289b13C4735b9c4c441abDdd03b445e
+- USDT-TRC20：TD4wFGZMVwQDZA3VUj6X3XBgDJjBEPSQyi
 
 ## 授權
-本程式依GNU精神進行開源，使用的條款為 AGPL
+本程式依據 GNU 的精神進行開源，使用的條款為 AGPL。請見 [LICENSE](./LICENSE.txt) 文件以獲得更多資訊。
