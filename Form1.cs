@@ -494,28 +494,7 @@ namespace PDF_tools
                     string InputFile = Compare_PDF_list.Items[i]?.ToString() ?? "";
                     WL.Append($" \"{InputFile}\"");
                 }
-                Process cmd = new();
-                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                cmd.StartInfo.FileName = "cmd.exe";
-                cmd.StartInfo.UseShellExecute = false;
-                cmd.StartInfo.RedirectStandardInput = true;
-                cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
-                cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
-                cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
-                StringBuilder cmdOutput = new();
-                cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
-                cmd.ErrorDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
-                cmd.Start();
-                cmd.BeginOutputReadLine();
-                cmd.BeginErrorReadLine();
-                cmd.StandardInput.WriteLine(WL);
-                cmd.StandardInput.Flush();
-                cmd.StandardInput.WriteLine("exit");
-                cmd.WaitForExit();
-                cmd_PDF_Compare.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
-                cmd_PDF_Compare.SelectionStart = cmd_PDF_Compare.Text.Length;
-                cmd_PDF_Compare.ScrollToCaret();
-                cmd.Close();
+                RunTime(cmd_PDF_Compare, WL.ToString());
             }
             else if (File.Exists(GB.gs) == false)
             {
@@ -612,27 +591,10 @@ namespace PDF_tools
                     }
                     if (File.Exists(GB.gs) == true)
                     {
-                        StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" + Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" + Show_PDF_Split_SaveLocation.Text + "\" \"" + Show_PDF_Split_Source.Text + "\"");
-                        Process cmd = new();
-                        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                        cmd.StartInfo.FileName = "cmd.exe";
-                        cmd.StartInfo.UseShellExecute = false;
-                        cmd.StartInfo.RedirectStandardInput = true;
-                        cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
-                        cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
-                        cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
-                        StringBuilder cmdOutput = new();
-                        cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
-                        cmd.Start();
-                        cmd.BeginOutputReadLine();
-                        cmd.StandardInput.WriteLine(WL);
-                        cmd.StandardInput.Flush();
-                        cmd.StandardInput.WriteLine("exit");
-                        cmd.WaitForExit();
-                        cmd_PDF_Split.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
-                        cmd_PDF_Split.SelectionStart = cmd_PDF_Split.Text.Length;
-                        cmd_PDF_Split.ScrollToCaret();
-                        cmd.Close();
+                        StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" + 
+                            Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" + 
+                            Show_PDF_Split_SaveLocation.Text + "\" \"" + Show_PDF_Split_Source.Text + "\"");
+                        RunTime(cmd_PDF_Split, WL.ToString());
                     }
                     else if (File.Exists(GB.gs) == false)
                     {
@@ -737,29 +699,10 @@ namespace PDF_tools
                     int i;
                     for (i = 0; i < IMGtoPDF_list.Items.Count; i++)
                     {
-                        Process cmd = new();
-                        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                        cmd.StartInfo.FileName = "cmd.exe";
-                        cmd.StartInfo.UseShellExecute = false;
-                        cmd.StartInfo.RedirectStandardInput = true;
-                        cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
-                        cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
-                        cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
-                        StringBuilder cmdOutput = new();
-                        cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
-                        cmd.Start();
-                        cmd.BeginOutputReadLine();
                         string item = IMGtoPDF_list.Items[i]?.ToString() ?? "";
                         string FileName = Path.GetFileNameWithoutExtension(item);
                         string WL = "\"" + GB.convert + "\" \"" + item + "\" \"" + Show_IMGtoPDF_SaveLocation.Text + "\\" + FileName + ".pdf\"";
-                        cmd.StandardInput.WriteLine(WL);
-                        cmd.StandardInput.Flush();
-                        cmd.StandardInput.WriteLine("exit");
-                        cmd.WaitForExit();
-                        cmd_IMGtoPDF.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
-                        cmd_IMGtoPDF.SelectionStart = cmd_IMGtoPDF.Text.Length;
-                        cmd_IMGtoPDF.ScrollToCaret();
-                        cmd.Close();
+                        RunTime(cmd_IMGtoPDF, WL);
                     }
                     MessageBox.Show("已全部轉換完畢。");
                 }
@@ -816,6 +759,30 @@ namespace PDF_tools
             {
                 MessageBox.Show(other.Message);
             }
+        }
+
+        private static void RunTime(TextBox TextCMD, string WL)
+        {
+            Process cmd = new();
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+            cmd.StartInfo.FileName = "cmd.exe";
+            cmd.StartInfo.UseShellExecute = false;
+            cmd.StartInfo.RedirectStandardInput = true;
+            cmd.StartInfo.RedirectStandardOutput = true;// 由呼叫程式獲取輸出資訊
+            cmd.StartInfo.RedirectStandardError = true;//重定向標準錯誤輸出
+            cmd.StartInfo.CreateNoWindow = true; //不跳出cmd視窗
+            StringBuilder cmdOutput = new();
+            cmd.OutputDataReceived += (sender, args) => cmdOutput.AppendLine(args.Data);
+            cmd.Start();
+            cmd.BeginOutputReadLine();
+            cmd.StandardInput.WriteLine(WL);
+            cmd.StandardInput.Flush();
+            cmd.StandardInput.WriteLine("exit");
+            cmd.WaitForExit();
+            TextCMD.Text += cmdOutput.ToString() + "\r\n------------------------------------------------\r\n";
+            TextCMD.SelectionStart = TextCMD.Text.Length;
+            TextCMD.ScrollToCaret();
+            cmd.Close();
         }
     }
 }
