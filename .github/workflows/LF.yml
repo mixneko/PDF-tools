@@ -1,0 +1,15 @@
+name: Set git to use LF
+  run: |
+    git config --global core.autocrlf false
+    git config --global core.eol lf
+
+name: Checkout
+  uses: actions/checkout@v2
+
+name: Convert code files to UTF-8
+  run: |
+    Get-ChildItem . -Recurse -Include *.cs | ForEach-Object {
+      $content = Get-Content $_.FullName
+      $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+      [IO.File]::WriteAllLines($_.FullName, $content, $Utf8NoBomEncoding)
+    }
