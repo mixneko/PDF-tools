@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Set_IM_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Set_IM_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Set_IM_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>724, 159</value>
+  </data>
+  <data name="Set_IM_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Set_IM_location.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Set_IM_location.Text" xml:space="preserve">
+    <value>瀏覽</value>
+  </data>
   <data name="&gt;&gt;Set_IM_location.Name" xml:space="preserve">
     <value>Set_IM_location</value>
   </data>
@@ -128,6 +149,18 @@
   </data>
   <data name="&gt;&gt;Set_IM_location.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Show_IM_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Show_IM_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 159</value>
+  </data>
+  <data name="Show_IM_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="Show_IM_location.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Show_IM_location.Name" xml:space="preserve">
     <value>Show_IM_location</value>
@@ -141,6 +174,27 @@
   <data name="&gt;&gt;Show_IM_location.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="NameOf_IM_location.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_IM_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_IM_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_IM_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 133</value>
+  </data>
+  <data name="NameOf_IM_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 23</value>
+  </data>
+  <data name="NameOf_IM_location.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="NameOf_IM_location.Text" xml:space="preserve">
+    <value>指定ImageMagick位置：</value>
+  </data>
   <data name="&gt;&gt;NameOf_IM_location.Name" xml:space="preserve">
     <value>NameOf_IM_location</value>
   </data>
@@ -152,6 +206,24 @@
   </data>
   <data name="&gt;&gt;NameOf_IM_location.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="Set_GS_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="Set_GS_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Set_GS_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>724, 60</value>
+  </data>
+  <data name="Set_GS_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="Set_GS_location.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Set_GS_location.Text" xml:space="preserve">
+    <value>瀏覽</value>
   </data>
   <data name="&gt;&gt;Set_GS_location.Name" xml:space="preserve">
     <value>Set_GS_location</value>
@@ -165,6 +237,18 @@
   <data name="&gt;&gt;Set_GS_location.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="Show_GS_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Show_GS_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 60</value>
+  </data>
+  <data name="Show_GS_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="Show_GS_location.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;Show_GS_location.Name" xml:space="preserve">
     <value>Show_GS_location</value>
   </data>
@@ -176,6 +260,27 @@
   </data>
   <data name="&gt;&gt;Show_GS_location.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="NameOf_Show_GS_location.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_Show_GS_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_Show_GS_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_Show_GS_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 34</value>
+  </data>
+  <data name="NameOf_Show_GS_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 23</value>
+  </data>
+  <data name="NameOf_Show_GS_location.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="NameOf_Show_GS_location.Text" xml:space="preserve">
+    <value>指定GhostScript位置：</value>
   </data>
   <data name="&gt;&gt;NameOf_Show_GS_location.Name" xml:space="preserve">
     <value>NameOf_Show_GS_location</value>
@@ -189,14 +294,12 @@
   <data name="&gt;&gt;NameOf_Show_GS_location.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Env.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
   </data>
   <data name="Env.Size" type="System.Drawing.Size, System.Drawing">
     <value>866, 581</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Env.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
@@ -215,6 +318,30 @@
   <data name="&gt;&gt;Env.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="Output_IMG_DPI.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Output_IMG_DPI.Items" xml:space="preserve">
+    <value>150</value>
+  </data>
+  <data name="Output_IMG_DPI.Items1" xml:space="preserve">
+    <value>200</value>
+  </data>
+  <data name="Output_IMG_DPI.Items2" xml:space="preserve">
+    <value>300</value>
+  </data>
+  <data name="Output_IMG_DPI.Items3" xml:space="preserve">
+    <value>600</value>
+  </data>
+  <data name="Output_IMG_DPI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>593, 181</value>
+  </data>
+  <data name="Output_IMG_DPI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 23</value>
+  </data>
+  <data name="Output_IMG_DPI.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="&gt;&gt;Output_IMG_DPI.Name" xml:space="preserve">
     <value>Output_IMG_DPI</value>
   </data>
@@ -226,6 +353,27 @@
   </data>
   <data name="&gt;&gt;Output_IMG_DPI.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="NameOf_Output_IMG_DPI.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_Output_IMG_DPI.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_Output_IMG_DPI.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_Output_IMG_DPI.Location" type="System.Drawing.Point, System.Drawing">
+    <value>421, 181</value>
+  </data>
+  <data name="NameOf_Output_IMG_DPI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 23</value>
+  </data>
+  <data name="NameOf_Output_IMG_DPI.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="NameOf_Output_IMG_DPI.Text" xml:space="preserve">
+    <value>選取輸出影像DPI：</value>
   </data>
   <data name="&gt;&gt;NameOf_Output_IMG_DPI.Name" xml:space="preserve">
     <value>NameOf_Output_IMG_DPI</value>
@@ -239,6 +387,27 @@
   <data name="&gt;&gt;NameOf_Output_IMG_DPI.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="Output_format.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Popup</value>
+  </data>
+  <data name="Output_format.Items" xml:space="preserve">
+    <value>png(含alpha)</value>
+  </data>
+  <data name="Output_format.Items1" xml:space="preserve">
+    <value>png(不含alpha)</value>
+  </data>
+  <data name="Output_format.Items2" xml:space="preserve">
+    <value>jpg</value>
+  </data>
+  <data name="Output_format.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 181</value>
+  </data>
+  <data name="Output_format.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 23</value>
+  </data>
+  <data name="Output_format.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;Output_format.Name" xml:space="preserve">
     <value>Output_format</value>
   </data>
@@ -250,6 +419,27 @@
   </data>
   <data name="&gt;&gt;Output_format.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="NameOf_Output_format.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_Output_format.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_Output_format.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_Output_format.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 181</value>
+  </data>
+  <data name="NameOf_Output_format.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 23</value>
+  </data>
+  <data name="NameOf_Output_format.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="NameOf_Output_format.Text" xml:space="preserve">
+    <value>選取輸出影像格式：</value>
   </data>
   <data name="&gt;&gt;NameOf_Output_format.Name" xml:space="preserve">
     <value>NameOf_Output_format</value>
@@ -263,6 +453,24 @@
   <data name="&gt;&gt;NameOf_Output_format.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="NameOf_cmd_PDFtoIMG.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_cmd_PDFtoIMG.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="NameOf_cmd_PDFtoIMG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 254</value>
+  </data>
+  <data name="NameOf_cmd_PDFtoIMG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="NameOf_cmd_PDFtoIMG.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="NameOf_cmd_PDFtoIMG.Text" xml:space="preserve">
+    <value>輸出結果：</value>
+  </data>
   <data name="&gt;&gt;NameOf_cmd_PDFtoIMG.Name" xml:space="preserve">
     <value>NameOf_cmd_PDFtoIMG</value>
   </data>
@@ -274,6 +482,21 @@
   </data>
   <data name="&gt;&gt;NameOf_cmd_PDFtoIMG.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="cmd_PDFtoIMG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 276</value>
+  </data>
+  <data name="cmd_PDFtoIMG.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cmd_PDFtoIMG.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="cmd_PDFtoIMG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>752, 268</value>
+  </data>
+  <data name="cmd_PDFtoIMG.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
   </data>
   <data name="&gt;&gt;cmd_PDFtoIMG.Name" xml:space="preserve">
     <value>cmd_PDFtoIMG</value>
@@ -287,6 +510,21 @@
   <data name="&gt;&gt;cmd_PDFtoIMG.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="Execute_PDFtoIMG.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Execute_PDFtoIMG.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 219</value>
+  </data>
+  <data name="Execute_PDFtoIMG.Size" type="System.Drawing.Size, System.Drawing">
+    <value>752, 32</value>
+  </data>
+  <data name="Execute_PDFtoIMG.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Execute_PDFtoIMG.Text" xml:space="preserve">
+    <value>執行</value>
+  </data>
   <data name="&gt;&gt;Execute_PDFtoIMG.Name" xml:space="preserve">
     <value>Execute_PDFtoIMG</value>
   </data>
@@ -298,6 +536,24 @@
   </data>
   <data name="&gt;&gt;Execute_PDFtoIMG.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="BowserOutputFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="BowserOutputFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BowserOutputFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 138</value>
+  </data>
+  <data name="BowserOutputFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="BowserOutputFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="BowserOutputFolder.Text" xml:space="preserve">
+    <value>瀏覽</value>
   </data>
   <data name="&gt;&gt;BowserOutputFolder.Name" xml:space="preserve">
     <value>BowserOutputFolder</value>
@@ -311,6 +567,18 @@
   <data name="&gt;&gt;BowserOutputFolder.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="Show_PDFtoImage_OutputFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Show_PDFtoImage_OutputFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 138</value>
+  </data>
+  <data name="Show_PDFtoImage_OutputFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="Show_PDFtoImage_OutputFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <data name="&gt;&gt;Show_PDFtoImage_OutputFolder.Name" xml:space="preserve">
     <value>Show_PDFtoImage_OutputFolder</value>
   </data>
@@ -322,6 +590,27 @@
   </data>
   <data name="&gt;&gt;Show_PDFtoImage_OutputFolder.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="NameOf_PDFtoImage_OutputFolder.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_PDFtoImage_OutputFolder.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_PDFtoImage_OutputFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_PDFtoImage_OutputFolder.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 112</value>
+  </data>
+  <data name="NameOf_PDFtoImage_OutputFolder.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="NameOf_PDFtoImage_OutputFolder.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="NameOf_PDFtoImage_OutputFolder.Text" xml:space="preserve">
+    <value>選取輸出資料夾</value>
   </data>
   <data name="&gt;&gt;NameOf_PDFtoImage_OutputFolder.Name" xml:space="preserve">
     <value>NameOf_PDFtoImage_OutputFolder</value>
@@ -335,6 +624,21 @@
   <data name="&gt;&gt;NameOf_PDFtoImage_OutputFolder.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="SelectPDFSource.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="SelectPDFSource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 59</value>
+  </data>
+  <data name="SelectPDFSource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="SelectPDFSource.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="SelectPDFSource.Text" xml:space="preserve">
+    <value>開啟</value>
+  </data>
   <data name="&gt;&gt;SelectPDFSource.Name" xml:space="preserve">
     <value>SelectPDFSource</value>
   </data>
@@ -347,6 +651,18 @@
   <data name="&gt;&gt;SelectPDFSource.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="Show_PDFtoImage_Source.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Show_PDFtoImage_Source.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 59</value>
+  </data>
+  <data name="Show_PDFtoImage_Source.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="Show_PDFtoImage_Source.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;Show_PDFtoImage_Source.Name" xml:space="preserve">
     <value>Show_PDFtoImage_Source</value>
   </data>
@@ -358,6 +674,24 @@
   </data>
   <data name="&gt;&gt;Show_PDFtoImage_Source.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="NameOf_PDFtoImage_Source.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_PDFtoImage_Source.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_PDFtoImage_Source.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 33</value>
+  </data>
+  <data name="NameOf_PDFtoImage_Source.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="NameOf_PDFtoImage_Source.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="NameOf_PDFtoImage_Source.Text" xml:space="preserve">
+    <value>選取PDF來源</value>
   </data>
   <data name="&gt;&gt;NameOf_PDFtoImage_Source.Name" xml:space="preserve">
     <value>NameOf_PDFtoImage_Source</value>
@@ -399,6 +733,21 @@
   <data name="&gt;&gt;PDFtoImage.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="Del_All_COM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Del_All_COM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 209</value>
+  </data>
+  <data name="Del_All_COM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Del_All_COM.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="Del_All_COM.Text" xml:space="preserve">
+    <value>清空清單</value>
+  </data>
   <data name="&gt;&gt;Del_All_COM.Name" xml:space="preserve">
     <value>Del_All_COM</value>
   </data>
@@ -410,6 +759,24 @@
   </data>
   <data name="&gt;&gt;Del_All_COM.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Set_PDF_Compare_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="Set_PDF_Compare_SaveLocation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Set_PDF_Compare_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 269</value>
+  </data>
+  <data name="Set_PDF_Compare_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 34</value>
+  </data>
+  <data name="Set_PDF_Compare_SaveLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Set_PDF_Compare_SaveLocation.Text" xml:space="preserve">
+    <value>瀏覽</value>
   </data>
   <data name="&gt;&gt;Set_PDF_Compare_SaveLocation.Name" xml:space="preserve">
     <value>Set_PDF_Compare_SaveLocation</value>
@@ -423,6 +790,18 @@
   <data name="&gt;&gt;Set_PDF_Compare_SaveLocation.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="Show_PDF_Compare_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Show_PDF_Compare_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 270</value>
+  </data>
+  <data name="Show_PDF_Compare_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 30</value>
+  </data>
+  <data name="Show_PDF_Compare_SaveLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;Show_PDF_Compare_SaveLocation.Name" xml:space="preserve">
     <value>Show_PDF_Compare_SaveLocation</value>
   </data>
@@ -434,6 +813,27 @@
   </data>
   <data name="&gt;&gt;Show_PDF_Compare_SaveLocation.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="NameOf_PDF_Compare_location.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_PDF_Compare_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_PDF_Compare_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_PDF_Compare_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 244</value>
+  </data>
+  <data name="NameOf_PDF_Compare_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 23</value>
+  </data>
+  <data name="NameOf_PDF_Compare_location.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="NameOf_PDF_Compare_location.Text" xml:space="preserve">
+    <value>選取合併後PDF儲存位置與名稱</value>
   </data>
   <data name="&gt;&gt;NameOf_PDF_Compare_location.Name" xml:space="preserve">
     <value>NameOf_PDF_Compare_location</value>
@@ -447,6 +847,24 @@
   <data name="&gt;&gt;NameOf_PDF_Compare_location.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="execute_PDF_Compare.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="execute_PDF_Compare.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="execute_PDF_Compare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 310</value>
+  </data>
+  <data name="execute_PDF_Compare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 36</value>
+  </data>
+  <data name="execute_PDF_Compare.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="execute_PDF_Compare.Text" xml:space="preserve">
+    <value>執行</value>
+  </data>
   <data name="&gt;&gt;execute_PDF_Compare.Name" xml:space="preserve">
     <value>execute_PDF_Compare</value>
   </data>
@@ -458,6 +876,27 @@
   </data>
   <data name="&gt;&gt;execute_PDF_Compare.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Compare.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Compare.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Compare.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Compare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 345</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Compare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Compare.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Compare.Text" xml:space="preserve">
+    <value>輸出結果：</value>
   </data>
   <data name="&gt;&gt;NameOf_cmd_PDF_Compare.Name" xml:space="preserve">
     <value>NameOf_cmd_PDF_Compare</value>
@@ -471,6 +910,21 @@
   <data name="&gt;&gt;NameOf_cmd_PDF_Compare.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="cmd_PDF_Compare.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 367</value>
+  </data>
+  <data name="cmd_PDF_Compare.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cmd_PDF_Compare.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="cmd_PDF_Compare.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 185</value>
+  </data>
+  <data name="cmd_PDF_Compare.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
   <data name="&gt;&gt;cmd_PDF_Compare.Name" xml:space="preserve">
     <value>cmd_PDF_Compare</value>
   </data>
@@ -482,6 +936,21 @@
   </data>
   <data name="&gt;&gt;cmd_PDF_Compare.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="Move_to_BOTTOM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Move_to_BOTTOM.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 178</value>
+  </data>
+  <data name="Move_to_BOTTOM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Move_to_BOTTOM.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Move_to_BOTTOM.Text" xml:space="preserve">
+    <value>移至最後</value>
   </data>
   <data name="&gt;&gt;Move_to_BOTTOM.Name" xml:space="preserve">
     <value>Move_to_BOTTOM</value>
@@ -495,6 +964,21 @@
   <data name="&gt;&gt;Move_to_BOTTOM.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="Move_DOWN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Move_DOWN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 149</value>
+  </data>
+  <data name="Move_DOWN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Move_DOWN.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Move_DOWN.Text" xml:space="preserve">
+    <value>下移一層</value>
+  </data>
   <data name="&gt;&gt;Move_DOWN.Name" xml:space="preserve">
     <value>Move_DOWN</value>
   </data>
@@ -506,6 +990,21 @@
   </data>
   <data name="&gt;&gt;Move_DOWN.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="Move_UP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Move_UP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 120</value>
+  </data>
+  <data name="Move_UP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Move_UP.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Move_UP.Text" xml:space="preserve">
+    <value>上移一層</value>
   </data>
   <data name="&gt;&gt;Move_UP.Name" xml:space="preserve">
     <value>Move_UP</value>
@@ -519,6 +1018,21 @@
   <data name="&gt;&gt;Move_UP.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="Move_to_TOP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Move_to_TOP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 91</value>
+  </data>
+  <data name="Move_to_TOP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Move_to_TOP.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Move_to_TOP.Text" xml:space="preserve">
+    <value>移至最頂</value>
+  </data>
   <data name="&gt;&gt;Move_to_TOP.Name" xml:space="preserve">
     <value>Move_to_TOP</value>
   </data>
@@ -530,6 +1044,21 @@
   </data>
   <data name="&gt;&gt;Move_to_TOP.ZOrder" xml:space="preserve">
     <value>10</value>
+  </data>
+  <data name="Del_compare_PDF.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Del_compare_PDF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 62</value>
+  </data>
+  <data name="Del_compare_PDF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Del_compare_PDF.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Del_compare_PDF.Text" xml:space="preserve">
+    <value>刪除</value>
   </data>
   <data name="&gt;&gt;Del_compare_PDF.Name" xml:space="preserve">
     <value>Del_compare_PDF</value>
@@ -543,6 +1072,18 @@
   <data name="&gt;&gt;Del_compare_PDF.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="add_compare_pdf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>741, 33</value>
+  </data>
+  <data name="add_compare_pdf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="add_compare_pdf.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="add_compare_pdf.Text" xml:space="preserve">
+    <value>加入</value>
+  </data>
   <data name="&gt;&gt;add_compare_pdf.Name" xml:space="preserve">
     <value>add_compare_pdf</value>
   </data>
@@ -554,6 +1095,18 @@
   </data>
   <data name="&gt;&gt;add_compare_pdf.ZOrder" xml:space="preserve">
     <value>12</value>
+  </data>
+  <data name="Compare_PDF_list.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Compare_PDF_list.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 33</value>
+  </data>
+  <data name="Compare_PDF_list.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 199</value>
+  </data>
+  <data name="Compare_PDF_list.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;Compare_PDF_list.Name" xml:space="preserve">
     <value>Compare_PDF_list</value>
@@ -594,6 +1147,24 @@
   <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="Execute_PDF_Split.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Execute_PDF_Split.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Execute_PDF_Split.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 261</value>
+  </data>
+  <data name="Execute_PDF_Split.Size" type="System.Drawing.Size, System.Drawing">
+    <value>752, 32</value>
+  </data>
+  <data name="Execute_PDF_Split.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Execute_PDF_Split.Text" xml:space="preserve">
+    <value>執行</value>
+  </data>
   <data name="&gt;&gt;Execute_PDF_Split.Name" xml:space="preserve">
     <value>Execute_PDF_Split</value>
   </data>
@@ -605,6 +1176,27 @@
   </data>
   <data name="&gt;&gt;Execute_PDF_Split.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Split.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Split.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Split.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Split.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 305</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Split.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Split.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="NameOf_cmd_PDF_Split.Text" xml:space="preserve">
+    <value>輸出結果：</value>
   </data>
   <data name="&gt;&gt;NameOf_cmd_PDF_Split.Name" xml:space="preserve">
     <value>NameOf_cmd_PDF_Split</value>
@@ -618,6 +1210,21 @@
   <data name="&gt;&gt;NameOf_cmd_PDF_Split.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="cmd_PDF_Split.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 327</value>
+  </data>
+  <data name="cmd_PDF_Split.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cmd_PDF_Split.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="cmd_PDF_Split.Size" type="System.Drawing.Size, System.Drawing">
+    <value>752, 206</value>
+  </data>
+  <data name="cmd_PDF_Split.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
   <data name="&gt;&gt;cmd_PDF_Split.Name" xml:space="preserve">
     <value>cmd_PDF_Split</value>
   </data>
@@ -629,6 +1236,18 @@
   </data>
   <data name="&gt;&gt;cmd_PDF_Split.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="Set_End_Page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 129</value>
+  </data>
+  <data name="Set_End_Page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 23</value>
+  </data>
+  <data name="Set_End_Page.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Set_End_Page.Text" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;Set_End_Page.Name" xml:space="preserve">
     <value>Set_End_Page</value>
@@ -642,6 +1261,27 @@
   <data name="&gt;&gt;Set_End_Page.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="NameOf_Set_End_Page.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_Set_End_Page.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_Set_End_Page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_Set_End_Page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>440, 130</value>
+  </data>
+  <data name="NameOf_Set_End_Page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="NameOf_Set_End_Page.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="NameOf_Set_End_Page.Text" xml:space="preserve">
+    <value>分割結束頁</value>
+  </data>
   <data name="&gt;&gt;NameOf_Set_End_Page.Name" xml:space="preserve">
     <value>NameOf_Set_End_Page</value>
   </data>
@@ -653,6 +1293,18 @@
   </data>
   <data name="&gt;&gt;NameOf_Set_End_Page.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="Set_Start_Page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 130</value>
+  </data>
+  <data name="Set_Start_Page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>142, 23</value>
+  </data>
+  <data name="Set_Start_Page.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Set_Start_Page.Text" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;Set_Start_Page.Name" xml:space="preserve">
     <value>Set_Start_Page</value>
@@ -666,6 +1318,27 @@
   <data name="&gt;&gt;Set_Start_Page.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="NameOf_Set_Start_Page.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_Set_Start_Page.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_Set_Start_Page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_Set_Start_Page.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 130</value>
+  </data>
+  <data name="NameOf_Set_Start_Page.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="NameOf_Set_Start_Page.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="NameOf_Set_Start_Page.Text" xml:space="preserve">
+    <value>分割起始頁</value>
+  </data>
   <data name="&gt;&gt;NameOf_Set_Start_Page.Name" xml:space="preserve">
     <value>NameOf_Set_Start_Page</value>
   </data>
@@ -677,6 +1350,24 @@
   </data>
   <data name="&gt;&gt;NameOf_Set_Start_Page.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="Set_PDF_Split_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="Set_PDF_Split_SaveLocation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Set_PDF_Split_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 214</value>
+  </data>
+  <data name="Set_PDF_Split_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="Set_PDF_Split_SaveLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Set_PDF_Split_SaveLocation.Text" xml:space="preserve">
+    <value>瀏覽</value>
   </data>
   <data name="&gt;&gt;Set_PDF_Split_SaveLocation.Name" xml:space="preserve">
     <value>Set_PDF_Split_SaveLocation</value>
@@ -690,6 +1381,18 @@
   <data name="&gt;&gt;Set_PDF_Split_SaveLocation.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="Show_PDF_Split_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Show_PDF_Split_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 214</value>
+  </data>
+  <data name="Show_PDF_Split_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="Show_PDF_Split_SaveLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="&gt;&gt;Show_PDF_Split_SaveLocation.Name" xml:space="preserve">
     <value>Show_PDF_Split_SaveLocation</value>
   </data>
@@ -701,6 +1404,27 @@
   </data>
   <data name="&gt;&gt;Show_PDF_Split_SaveLocation.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="NameOF_PDF_Split_location.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOF_PDF_Split_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOF_PDF_Split_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOF_PDF_Split_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 188</value>
+  </data>
+  <data name="NameOF_PDF_Split_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>260, 23</value>
+  </data>
+  <data name="NameOF_PDF_Split_location.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="NameOF_PDF_Split_location.Text" xml:space="preserve">
+    <value>選取分割後PDF儲存位置及名稱</value>
   </data>
   <data name="&gt;&gt;NameOF_PDF_Split_location.Name" xml:space="preserve">
     <value>NameOF_PDF_Split_location</value>
@@ -714,6 +1438,24 @@
   <data name="&gt;&gt;NameOF_PDF_Split_location.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="Select_PDF_Split_Source.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="Select_PDF_Split_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Select_PDF_Split_Source.Location" type="System.Drawing.Point, System.Drawing">
+    <value>728, 68</value>
+  </data>
+  <data name="Select_PDF_Split_Source.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="Select_PDF_Split_Source.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Select_PDF_Split_Source.Text" xml:space="preserve">
+    <value>開啟</value>
+  </data>
   <data name="&gt;&gt;Select_PDF_Split_Source.Name" xml:space="preserve">
     <value>Select_PDF_Split_Source</value>
   </data>
@@ -726,6 +1468,18 @@
   <data name="&gt;&gt;Select_PDF_Split_Source.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="Show_PDF_Split_Source.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Show_PDF_Split_Source.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 68</value>
+  </data>
+  <data name="Show_PDF_Split_Source.Size" type="System.Drawing.Size, System.Drawing">
+    <value>650, 30</value>
+  </data>
+  <data name="Show_PDF_Split_Source.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="&gt;&gt;Show_PDF_Split_Source.Name" xml:space="preserve">
     <value>Show_PDF_Split_Source</value>
   </data>
@@ -737,6 +1491,27 @@
   </data>
   <data name="&gt;&gt;Show_PDF_Split_Source.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="NameOf_PDF_Split_Source.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="NameOf_PDF_Split_Source.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="NameOf_PDF_Split_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="NameOf_PDF_Split_Source.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 42</value>
+  </data>
+  <data name="NameOf_PDF_Split_Source.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 23</value>
+  </data>
+  <data name="NameOf_PDF_Split_Source.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="NameOf_PDF_Split_Source.Text" xml:space="preserve">
+    <value>選取PDF來源</value>
   </data>
   <data name="&gt;&gt;NameOf_PDF_Split_Source.Name" xml:space="preserve">
     <value>NameOf_PDF_Split_Source</value>
@@ -777,6 +1552,21 @@
   <data name="&gt;&gt;PDF_Split.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="Clear_ImagetoPDF_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Clear_ImagetoPDF_Source.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 177</value>
+  </data>
+  <data name="Clear_ImagetoPDF_Source.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Clear_ImagetoPDF_Source.TabIndex" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="Clear_ImagetoPDF_Source.Text" xml:space="preserve">
+    <value>清空清單</value>
+  </data>
   <data name="&gt;&gt;Clear_ImagetoPDF_Source.Name" xml:space="preserve">
     <value>Clear_ImagetoPDF_Source</value>
   </data>
@@ -788,6 +1578,24 @@
   </data>
   <data name="&gt;&gt;Clear_ImagetoPDF_Source.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Set_IMGtoPDF_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="Set_IMGtoPDF_SaveLocation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Set_IMGtoPDF_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 237</value>
+  </data>
+  <data name="Set_IMGtoPDF_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 30</value>
+  </data>
+  <data name="Set_IMGtoPDF_SaveLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Set_IMGtoPDF_SaveLocation.Text" xml:space="preserve">
+    <value>瀏覽</value>
   </data>
   <data name="&gt;&gt;Set_IMGtoPDF_SaveLocation.Name" xml:space="preserve">
     <value>Set_IMGtoPDF_SaveLocation</value>
@@ -801,6 +1609,18 @@
   <data name="&gt;&gt;Set_IMGtoPDF_SaveLocation.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="Show_IMGtoPDF_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Show_IMGtoPDF_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 238</value>
+  </data>
+  <data name="Show_IMGtoPDF_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 30</value>
+  </data>
+  <data name="Show_IMGtoPDF_SaveLocation.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
   <data name="&gt;&gt;Show_IMGtoPDF_SaveLocation.Name" xml:space="preserve">
     <value>Show_IMGtoPDF_SaveLocation</value>
   </data>
@@ -812,6 +1632,27 @@
   </data>
   <data name="&gt;&gt;Show_IMGtoPDF_SaveLocation.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="Name_toIMG_location.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Name_toIMG_location.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Name_toIMG_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Name_toIMG_location.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 212</value>
+  </data>
+  <data name="Name_toIMG_location.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 23</value>
+  </data>
+  <data name="Name_toIMG_location.TabIndex" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="Name_toIMG_location.Text" xml:space="preserve">
+    <value>選取合併後PDF儲存位置</value>
   </data>
   <data name="&gt;&gt;Name_toIMG_location.Name" xml:space="preserve">
     <value>Name_toIMG_location</value>
@@ -825,6 +1666,24 @@
   <data name="&gt;&gt;Name_toIMG_location.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="Execute_IMGtoPDF.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 13pt</value>
+  </data>
+  <data name="Execute_IMGtoPDF.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Execute_IMGtoPDF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 278</value>
+  </data>
+  <data name="Execute_IMGtoPDF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 32</value>
+  </data>
+  <data name="Execute_IMGtoPDF.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="Execute_IMGtoPDF.Text" xml:space="preserve">
+    <value>執行</value>
+  </data>
   <data name="&gt;&gt;Execute_IMGtoPDF.Name" xml:space="preserve">
     <value>Execute_IMGtoPDF</value>
   </data>
@@ -836,6 +1695,27 @@
   </data>
   <data name="&gt;&gt;Execute_IMGtoPDF.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="Nameof_IMGtoPDF_cmd.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Nameof_IMGtoPDF_cmd.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft JhengHei UI, 11pt</value>
+  </data>
+  <data name="Nameof_IMGtoPDF_cmd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Nameof_IMGtoPDF_cmd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 322</value>
+  </data>
+  <data name="Nameof_IMGtoPDF_cmd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 19</value>
+  </data>
+  <data name="Nameof_IMGtoPDF_cmd.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="Nameof_IMGtoPDF_cmd.Text" xml:space="preserve">
+    <value>輸出結果：</value>
   </data>
   <data name="&gt;&gt;Nameof_IMGtoPDF_cmd.Name" xml:space="preserve">
     <value>Nameof_IMGtoPDF_cmd</value>
@@ -849,6 +1729,21 @@
   <data name="&gt;&gt;Nameof_IMGtoPDF_cmd.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="cmd_IMGtoPDF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 344</value>
+  </data>
+  <data name="cmd_IMGtoPDF.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cmd_IMGtoPDF.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Both</value>
+  </data>
+  <data name="cmd_IMGtoPDF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>762, 206</value>
+  </data>
+  <data name="cmd_IMGtoPDF.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
   <data name="&gt;&gt;cmd_IMGtoPDF.Name" xml:space="preserve">
     <value>cmd_IMGtoPDF</value>
   </data>
@@ -860,6 +1755,21 @@
   </data>
   <data name="&gt;&gt;cmd_IMGtoPDF.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="Del_ImagetoPDF_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Del_ImagetoPDF_Source.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 60</value>
+  </data>
+  <data name="Del_ImagetoPDF_Source.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Del_ImagetoPDF_Source.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Del_ImagetoPDF_Source.Text" xml:space="preserve">
+    <value>刪除</value>
   </data>
   <data name="&gt;&gt;Del_ImagetoPDF_Source.Name" xml:space="preserve">
     <value>Del_ImagetoPDF_Source</value>
@@ -873,6 +1783,21 @@
   <data name="&gt;&gt;Del_ImagetoPDF_Source.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="Add_ImagetoPDF_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Add_ImagetoPDF_Source.Location" type="System.Drawing.Point, System.Drawing">
+    <value>739, 31</value>
+  </data>
+  <data name="Add_ImagetoPDF_Source.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Add_ImagetoPDF_Source.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Add_ImagetoPDF_Source.Text" xml:space="preserve">
+    <value>加入</value>
+  </data>
   <data name="&gt;&gt;Add_ImagetoPDF_Source.Name" xml:space="preserve">
     <value>Add_ImagetoPDF_Source</value>
   </data>
@@ -884,6 +1809,18 @@
   </data>
   <data name="&gt;&gt;Add_ImagetoPDF_Source.ZOrder" xml:space="preserve">
     <value>8</value>
+  </data>
+  <data name="IMGtoPDF_list.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="IMGtoPDF_list.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 31</value>
+  </data>
+  <data name="IMGtoPDF_list.Size" type="System.Drawing.Size, System.Drawing">
+    <value>681, 169</value>
+  </data>
+  <data name="IMGtoPDF_list.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;IMGtoPDF_list.Name" xml:space="preserve">
     <value>IMGtoPDF_list</value>
@@ -927,7 +1864,6 @@
   <data name="mixneko_link.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft JhengHei UI, 11pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="mixneko_link.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1349,1614 +2285,6 @@ PowerBy</value>
   </data>
   <data name="&gt;&gt;PDF_Compare.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="Set_IM_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="Set_IM_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Set_IM_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>724, 159</value>
-  </data>
-  <data name="Set_IM_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
-  </data>
-  <data name="Set_IM_location.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="Set_IM_location.Text" xml:space="preserve">
-    <value>瀏覽</value>
-  </data>
-  <data name="&gt;&gt;Set_IM_location.Name" xml:space="preserve">
-    <value>Set_IM_location</value>
-  </data>
-  <data name="&gt;&gt;Set_IM_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Set_IM_location.Parent" xml:space="preserve">
-    <value>Env</value>
-  </data>
-  <data name="&gt;&gt;Set_IM_location.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Show_IM_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Show_IM_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 159</value>
-  </data>
-  <data name="Show_IM_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="Show_IM_location.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;Show_IM_location.Name" xml:space="preserve">
-    <value>Show_IM_location</value>
-  </data>
-  <data name="&gt;&gt;Show_IM_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Show_IM_location.Parent" xml:space="preserve">
-    <value>Env</value>
-  </data>
-  <data name="&gt;&gt;Show_IM_location.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="NameOf_IM_location.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_IM_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_IM_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_IM_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 133</value>
-  </data>
-  <data name="NameOf_IM_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 23</value>
-  </data>
-  <data name="NameOf_IM_location.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="NameOf_IM_location.Text" xml:space="preserve">
-    <value>指定ImageMagick位置：</value>
-  </data>
-  <data name="&gt;&gt;NameOf_IM_location.Name" xml:space="preserve">
-    <value>NameOf_IM_location</value>
-  </data>
-  <data name="&gt;&gt;NameOf_IM_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_IM_location.Parent" xml:space="preserve">
-    <value>Env</value>
-  </data>
-  <data name="&gt;&gt;NameOf_IM_location.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Set_GS_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="Set_GS_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Set_GS_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>724, 60</value>
-  </data>
-  <data name="Set_GS_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
-  </data>
-  <data name="Set_GS_location.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="Set_GS_location.Text" xml:space="preserve">
-    <value>瀏覽</value>
-  </data>
-  <data name="&gt;&gt;Set_GS_location.Name" xml:space="preserve">
-    <value>Set_GS_location</value>
-  </data>
-  <data name="&gt;&gt;Set_GS_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Set_GS_location.Parent" xml:space="preserve">
-    <value>Env</value>
-  </data>
-  <data name="&gt;&gt;Set_GS_location.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Show_GS_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Show_GS_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>68, 60</value>
-  </data>
-  <data name="Show_GS_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="Show_GS_location.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;Show_GS_location.Name" xml:space="preserve">
-    <value>Show_GS_location</value>
-  </data>
-  <data name="&gt;&gt;Show_GS_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Show_GS_location.Parent" xml:space="preserve">
-    <value>Env</value>
-  </data>
-  <data name="&gt;&gt;Show_GS_location.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="NameOf_Show_GS_location.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_Show_GS_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_Show_GS_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_Show_GS_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 34</value>
-  </data>
-  <data name="NameOf_Show_GS_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 23</value>
-  </data>
-  <data name="NameOf_Show_GS_location.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="NameOf_Show_GS_location.Text" xml:space="preserve">
-    <value>指定GhostScript位置：</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Show_GS_location.Name" xml:space="preserve">
-    <value>NameOf_Show_GS_location</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Show_GS_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Show_GS_location.Parent" xml:space="preserve">
-    <value>Env</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Show_GS_location.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Output_IMG_DPI.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="Output_IMG_DPI.Items" xml:space="preserve">
-    <value>150</value>
-  </data>
-  <data name="Output_IMG_DPI.Items1" xml:space="preserve">
-    <value>200</value>
-  </data>
-  <data name="Output_IMG_DPI.Items2" xml:space="preserve">
-    <value>300</value>
-  </data>
-  <data name="Output_IMG_DPI.Items3" xml:space="preserve">
-    <value>600</value>
-  </data>
-  <data name="Output_IMG_DPI.Location" type="System.Drawing.Point, System.Drawing">
-    <value>593, 181</value>
-  </data>
-  <data name="Output_IMG_DPI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>129, 23</value>
-  </data>
-  <data name="Output_IMG_DPI.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;Output_IMG_DPI.Name" xml:space="preserve">
-    <value>Output_IMG_DPI</value>
-  </data>
-  <data name="&gt;&gt;Output_IMG_DPI.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Output_IMG_DPI.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;Output_IMG_DPI.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="NameOf_Output_IMG_DPI.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_Output_IMG_DPI.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_Output_IMG_DPI.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_Output_IMG_DPI.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 181</value>
-  </data>
-  <data name="NameOf_Output_IMG_DPI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>166, 23</value>
-  </data>
-  <data name="NameOf_Output_IMG_DPI.TabIndex" type="System.Int32, mscorlib">
-    <value>102</value>
-  </data>
-  <data name="NameOf_Output_IMG_DPI.Text" xml:space="preserve">
-    <value>選取輸出影像DPI：</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Output_IMG_DPI.Name" xml:space="preserve">
-    <value>NameOf_Output_IMG_DPI</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Output_IMG_DPI.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Output_IMG_DPI.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Output_IMG_DPI.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Output_format.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Popup</value>
-  </data>
-  <data name="Output_format.Items" xml:space="preserve">
-    <value>png(含alpha)</value>
-  </data>
-  <data name="Output_format.Items1" xml:space="preserve">
-    <value>png(不含alpha)</value>
-  </data>
-  <data name="Output_format.Items2" xml:space="preserve">
-    <value>jpg</value>
-  </data>
-  <data name="Output_format.Location" type="System.Drawing.Point, System.Drawing">
-    <value>229, 181</value>
-  </data>
-  <data name="Output_format.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 23</value>
-  </data>
-  <data name="Output_format.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Output_format.Name" xml:space="preserve">
-    <value>Output_format</value>
-  </data>
-  <data name="&gt;&gt;Output_format.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Output_format.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;Output_format.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="NameOf_Output_format.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_Output_format.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_Output_format.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_Output_format.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 181</value>
-  </data>
-  <data name="NameOf_Output_format.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 23</value>
-  </data>
-  <data name="NameOf_Output_format.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="NameOf_Output_format.Text" xml:space="preserve">
-    <value>選取輸出影像格式：</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Output_format.Name" xml:space="preserve">
-    <value>NameOf_Output_format</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Output_format.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Output_format.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Output_format.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="NameOf_cmd_PDFtoIMG.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_cmd_PDFtoIMG.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="NameOf_cmd_PDFtoIMG.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 254</value>
-  </data>
-  <data name="NameOf_cmd_PDFtoIMG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 19</value>
-  </data>
-  <data name="NameOf_cmd_PDFtoIMG.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="NameOf_cmd_PDFtoIMG.Text" xml:space="preserve">
-    <value>輸出結果：</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDFtoIMG.Name" xml:space="preserve">
-    <value>NameOf_cmd_PDFtoIMG</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDFtoIMG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDFtoIMG.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDFtoIMG.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="cmd_PDFtoIMG.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 276</value>
-  </data>
-  <data name="cmd_PDFtoIMG.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cmd_PDFtoIMG.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
-  </data>
-  <data name="cmd_PDFtoIMG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 268</value>
-  </data>
-  <data name="cmd_PDFtoIMG.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDFtoIMG.Name" xml:space="preserve">
-    <value>cmd_PDFtoIMG</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDFtoIMG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDFtoIMG.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDFtoIMG.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Execute_PDFtoIMG.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Execute_PDFtoIMG.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 219</value>
-  </data>
-  <data name="Execute_PDFtoIMG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 32</value>
-  </data>
-  <data name="Execute_PDFtoIMG.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="Execute_PDFtoIMG.Text" xml:space="preserve">
-    <value>執行</value>
-  </data>
-  <data name="&gt;&gt;Execute_PDFtoIMG.Name" xml:space="preserve">
-    <value>Execute_PDFtoIMG</value>
-  </data>
-  <data name="&gt;&gt;Execute_PDFtoIMG.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Execute_PDFtoIMG.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;Execute_PDFtoIMG.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="BowserOutputFolder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="BowserOutputFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BowserOutputFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>728, 138</value>
-  </data>
-  <data name="BowserOutputFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
-  </data>
-  <data name="BowserOutputFolder.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="BowserOutputFolder.Text" xml:space="preserve">
-    <value>瀏覽</value>
-  </data>
-  <data name="&gt;&gt;BowserOutputFolder.Name" xml:space="preserve">
-    <value>BowserOutputFolder</value>
-  </data>
-  <data name="&gt;&gt;BowserOutputFolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BowserOutputFolder.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;BowserOutputFolder.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Show_PDFtoImage_OutputFolder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Show_PDFtoImage_OutputFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 138</value>
-  </data>
-  <data name="Show_PDFtoImage_OutputFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="Show_PDFtoImage_OutputFolder.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Show_PDFtoImage_OutputFolder.Name" xml:space="preserve">
-    <value>Show_PDFtoImage_OutputFolder</value>
-  </data>
-  <data name="&gt;&gt;Show_PDFtoImage_OutputFolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Show_PDFtoImage_OutputFolder.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;Show_PDFtoImage_OutputFolder.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="NameOf_PDFtoImage_OutputFolder.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_PDFtoImage_OutputFolder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_PDFtoImage_OutputFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_PDFtoImage_OutputFolder.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 112</value>
-  </data>
-  <data name="NameOf_PDFtoImage_OutputFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 23</value>
-  </data>
-  <data name="NameOf_PDFtoImage_OutputFolder.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="NameOf_PDFtoImage_OutputFolder.Text" xml:space="preserve">
-    <value>選取輸出資料夾</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDFtoImage_OutputFolder.Name" xml:space="preserve">
-    <value>NameOf_PDFtoImage_OutputFolder</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDFtoImage_OutputFolder.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDFtoImage_OutputFolder.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDFtoImage_OutputFolder.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="SelectPDFSource.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="SelectPDFSource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>728, 59</value>
-  </data>
-  <data name="SelectPDFSource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
-  </data>
-  <data name="SelectPDFSource.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="SelectPDFSource.Text" xml:space="preserve">
-    <value>開啟</value>
-  </data>
-  <data name="&gt;&gt;SelectPDFSource.Name" xml:space="preserve">
-    <value>SelectPDFSource</value>
-  </data>
-  <data name="&gt;&gt;SelectPDFSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SelectPDFSource.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;SelectPDFSource.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="Show_PDFtoImage_Source.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Show_PDFtoImage_Source.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 59</value>
-  </data>
-  <data name="Show_PDFtoImage_Source.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="Show_PDFtoImage_Source.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Show_PDFtoImage_Source.Name" xml:space="preserve">
-    <value>Show_PDFtoImage_Source</value>
-  </data>
-  <data name="&gt;&gt;Show_PDFtoImage_Source.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Show_PDFtoImage_Source.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;Show_PDFtoImage_Source.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="NameOf_PDFtoImage_Source.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_PDFtoImage_Source.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_PDFtoImage_Source.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 33</value>
-  </data>
-  <data name="NameOf_PDFtoImage_Source.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 23</value>
-  </data>
-  <data name="NameOf_PDFtoImage_Source.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="NameOf_PDFtoImage_Source.Text" xml:space="preserve">
-    <value>選取PDF來源</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDFtoImage_Source.Name" xml:space="preserve">
-    <value>NameOf_PDFtoImage_Source</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDFtoImage_Source.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDFtoImage_Source.Parent" xml:space="preserve">
-    <value>PDFtoImage</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDFtoImage_Source.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="Del_All_COM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Del_All_COM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 209</value>
-  </data>
-  <data name="Del_All_COM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Del_All_COM.TabIndex" type="System.Int32, mscorlib">
-    <value>105</value>
-  </data>
-  <data name="Del_All_COM.Text" xml:space="preserve">
-    <value>清空清單</value>
-  </data>
-  <data name="&gt;&gt;Del_All_COM.Name" xml:space="preserve">
-    <value>Del_All_COM</value>
-  </data>
-  <data name="&gt;&gt;Del_All_COM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Del_All_COM.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Del_All_COM.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Set_PDF_Compare_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="Set_PDF_Compare_SaveLocation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Set_PDF_Compare_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 269</value>
-  </data>
-  <data name="Set_PDF_Compare_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 34</value>
-  </data>
-  <data name="Set_PDF_Compare_SaveLocation.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="Set_PDF_Compare_SaveLocation.Text" xml:space="preserve">
-    <value>瀏覽</value>
-  </data>
-  <data name="&gt;&gt;Set_PDF_Compare_SaveLocation.Name" xml:space="preserve">
-    <value>Set_PDF_Compare_SaveLocation</value>
-  </data>
-  <data name="&gt;&gt;Set_PDF_Compare_SaveLocation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Set_PDF_Compare_SaveLocation.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Set_PDF_Compare_SaveLocation.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Show_PDF_Compare_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Show_PDF_Compare_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 270</value>
-  </data>
-  <data name="Show_PDF_Compare_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 30</value>
-  </data>
-  <data name="Show_PDF_Compare_SaveLocation.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Compare_SaveLocation.Name" xml:space="preserve">
-    <value>Show_PDF_Compare_SaveLocation</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Compare_SaveLocation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Compare_SaveLocation.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Compare_SaveLocation.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="NameOf_PDF_Compare_location.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_PDF_Compare_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_PDF_Compare_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_PDF_Compare_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 244</value>
-  </data>
-  <data name="NameOf_PDF_Compare_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 23</value>
-  </data>
-  <data name="NameOf_PDF_Compare_location.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="NameOf_PDF_Compare_location.Text" xml:space="preserve">
-    <value>選取合併後PDF儲存位置與名稱</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDF_Compare_location.Name" xml:space="preserve">
-    <value>NameOf_PDF_Compare_location</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDF_Compare_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDF_Compare_location.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDF_Compare_location.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="execute_PDF_Compare.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="execute_PDF_Compare.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="execute_PDF_Compare.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 310</value>
-  </data>
-  <data name="execute_PDF_Compare.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 36</value>
-  </data>
-  <data name="execute_PDF_Compare.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="execute_PDF_Compare.Text" xml:space="preserve">
-    <value>執行</value>
-  </data>
-  <data name="&gt;&gt;execute_PDF_Compare.Name" xml:space="preserve">
-    <value>execute_PDF_Compare</value>
-  </data>
-  <data name="&gt;&gt;execute_PDF_Compare.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;execute_PDF_Compare.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;execute_PDF_Compare.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Compare.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Compare.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Compare.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Compare.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 345</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Compare.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 19</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Compare.TabIndex" type="System.Int32, mscorlib">
-    <value>101</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Compare.Text" xml:space="preserve">
-    <value>輸出結果：</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDF_Compare.Name" xml:space="preserve">
-    <value>NameOf_cmd_PDF_Compare</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDF_Compare.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDF_Compare.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDF_Compare.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="cmd_PDF_Compare.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 367</value>
-  </data>
-  <data name="cmd_PDF_Compare.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cmd_PDF_Compare.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
-  </data>
-  <data name="cmd_PDF_Compare.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 185</value>
-  </data>
-  <data name="cmd_PDF_Compare.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDF_Compare.Name" xml:space="preserve">
-    <value>cmd_PDF_Compare</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDF_Compare.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDF_Compare.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDF_Compare.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Move_to_BOTTOM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Move_to_BOTTOM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 178</value>
-  </data>
-  <data name="Move_to_BOTTOM.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Move_to_BOTTOM.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="Move_to_BOTTOM.Text" xml:space="preserve">
-    <value>移至最後</value>
-  </data>
-  <data name="&gt;&gt;Move_to_BOTTOM.Name" xml:space="preserve">
-    <value>Move_to_BOTTOM</value>
-  </data>
-  <data name="&gt;&gt;Move_to_BOTTOM.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Move_to_BOTTOM.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Move_to_BOTTOM.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Move_DOWN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Move_DOWN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 149</value>
-  </data>
-  <data name="Move_DOWN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Move_DOWN.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="Move_DOWN.Text" xml:space="preserve">
-    <value>下移一層</value>
-  </data>
-  <data name="&gt;&gt;Move_DOWN.Name" xml:space="preserve">
-    <value>Move_DOWN</value>
-  </data>
-  <data name="&gt;&gt;Move_DOWN.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Move_DOWN.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Move_DOWN.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Move_UP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Move_UP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 120</value>
-  </data>
-  <data name="Move_UP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Move_UP.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Move_UP.Text" xml:space="preserve">
-    <value>上移一層</value>
-  </data>
-  <data name="&gt;&gt;Move_UP.Name" xml:space="preserve">
-    <value>Move_UP</value>
-  </data>
-  <data name="&gt;&gt;Move_UP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Move_UP.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Move_UP.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="Move_to_TOP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Move_to_TOP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 91</value>
-  </data>
-  <data name="Move_to_TOP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Move_to_TOP.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="Move_to_TOP.Text" xml:space="preserve">
-    <value>移至最頂</value>
-  </data>
-  <data name="&gt;&gt;Move_to_TOP.Name" xml:space="preserve">
-    <value>Move_to_TOP</value>
-  </data>
-  <data name="&gt;&gt;Move_to_TOP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Move_to_TOP.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Move_to_TOP.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="Del_compare_PDF.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Del_compare_PDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 62</value>
-  </data>
-  <data name="Del_compare_PDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Del_compare_PDF.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Del_compare_PDF.Text" xml:space="preserve">
-    <value>刪除</value>
-  </data>
-  <data name="&gt;&gt;Del_compare_PDF.Name" xml:space="preserve">
-    <value>Del_compare_PDF</value>
-  </data>
-  <data name="&gt;&gt;Del_compare_PDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Del_compare_PDF.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Del_compare_PDF.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="add_compare_pdf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>741, 33</value>
-  </data>
-  <data name="add_compare_pdf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="add_compare_pdf.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="add_compare_pdf.Text" xml:space="preserve">
-    <value>加入</value>
-  </data>
-  <data name="&gt;&gt;add_compare_pdf.Name" xml:space="preserve">
-    <value>add_compare_pdf</value>
-  </data>
-  <data name="&gt;&gt;add_compare_pdf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;add_compare_pdf.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;add_compare_pdf.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="Compare_PDF_list.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="Compare_PDF_list.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 33</value>
-  </data>
-  <data name="Compare_PDF_list.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 199</value>
-  </data>
-  <data name="Compare_PDF_list.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Compare_PDF_list.Name" xml:space="preserve">
-    <value>Compare_PDF_list</value>
-  </data>
-  <data name="&gt;&gt;Compare_PDF_list.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Compare_PDF_list.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;Compare_PDF_list.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="Execute_PDF_Split.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Execute_PDF_Split.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Execute_PDF_Split.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 261</value>
-  </data>
-  <data name="Execute_PDF_Split.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 32</value>
-  </data>
-  <data name="Execute_PDF_Split.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="Execute_PDF_Split.Text" xml:space="preserve">
-    <value>執行</value>
-  </data>
-  <data name="&gt;&gt;Execute_PDF_Split.Name" xml:space="preserve">
-    <value>Execute_PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;Execute_PDF_Split.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Execute_PDF_Split.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;Execute_PDF_Split.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Split.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Split.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Split.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Split.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 305</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Split.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 19</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Split.TabIndex" type="System.Int32, mscorlib">
-    <value>104</value>
-  </data>
-  <data name="NameOf_cmd_PDF_Split.Text" xml:space="preserve">
-    <value>輸出結果：</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDF_Split.Name" xml:space="preserve">
-    <value>NameOf_cmd_PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDF_Split.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDF_Split.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;NameOf_cmd_PDF_Split.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="cmd_PDF_Split.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 327</value>
-  </data>
-  <data name="cmd_PDF_Split.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cmd_PDF_Split.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
-  </data>
-  <data name="cmd_PDF_Split.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 206</value>
-  </data>
-  <data name="cmd_PDF_Split.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDF_Split.Name" xml:space="preserve">
-    <value>cmd_PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDF_Split.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDF_Split.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;cmd_PDF_Split.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Set_End_Page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 129</value>
-  </data>
-  <data name="Set_End_Page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 23</value>
-  </data>
-  <data name="Set_End_Page.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Set_End_Page.Text" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;Set_End_Page.Name" xml:space="preserve">
-    <value>Set_End_Page</value>
-  </data>
-  <data name="&gt;&gt;Set_End_Page.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Set_End_Page.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;Set_End_Page.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="NameOf_Set_End_Page.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_Set_End_Page.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_Set_End_Page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_Set_End_Page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>440, 130</value>
-  </data>
-  <data name="NameOf_Set_End_Page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="NameOf_Set_End_Page.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="NameOf_Set_End_Page.Text" xml:space="preserve">
-    <value>分割結束頁</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Set_End_Page.Name" xml:space="preserve">
-    <value>NameOf_Set_End_Page</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Set_End_Page.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Set_End_Page.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Set_End_Page.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Set_Start_Page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 130</value>
-  </data>
-  <data name="Set_Start_Page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>142, 23</value>
-  </data>
-  <data name="Set_Start_Page.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="Set_Start_Page.Text" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Set_Start_Page.Name" xml:space="preserve">
-    <value>Set_Start_Page</value>
-  </data>
-  <data name="&gt;&gt;Set_Start_Page.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Set_Start_Page.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;Set_Start_Page.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="NameOf_Set_Start_Page.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_Set_Start_Page.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_Set_Start_Page.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_Set_Start_Page.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 130</value>
-  </data>
-  <data name="NameOf_Set_Start_Page.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 23</value>
-  </data>
-  <data name="NameOf_Set_Start_Page.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="NameOf_Set_Start_Page.Text" xml:space="preserve">
-    <value>分割起始頁</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Set_Start_Page.Name" xml:space="preserve">
-    <value>NameOf_Set_Start_Page</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Set_Start_Page.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Set_Start_Page.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;NameOf_Set_Start_Page.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Set_PDF_Split_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="Set_PDF_Split_SaveLocation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Set_PDF_Split_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>728, 214</value>
-  </data>
-  <data name="Set_PDF_Split_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
-  </data>
-  <data name="Set_PDF_Split_SaveLocation.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="Set_PDF_Split_SaveLocation.Text" xml:space="preserve">
-    <value>瀏覽</value>
-  </data>
-  <data name="&gt;&gt;Set_PDF_Split_SaveLocation.Name" xml:space="preserve">
-    <value>Set_PDF_Split_SaveLocation</value>
-  </data>
-  <data name="&gt;&gt;Set_PDF_Split_SaveLocation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Set_PDF_Split_SaveLocation.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;Set_PDF_Split_SaveLocation.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Show_PDF_Split_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Show_PDF_Split_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 214</value>
-  </data>
-  <data name="Show_PDF_Split_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="Show_PDF_Split_SaveLocation.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Split_SaveLocation.Name" xml:space="preserve">
-    <value>Show_PDF_Split_SaveLocation</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Split_SaveLocation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Split_SaveLocation.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Split_SaveLocation.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="NameOF_PDF_Split_location.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOF_PDF_Split_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOF_PDF_Split_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOF_PDF_Split_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 188</value>
-  </data>
-  <data name="NameOF_PDF_Split_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>260, 23</value>
-  </data>
-  <data name="NameOF_PDF_Split_location.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="NameOF_PDF_Split_location.Text" xml:space="preserve">
-    <value>選取分割後PDF儲存位置及名稱</value>
-  </data>
-  <data name="&gt;&gt;NameOF_PDF_Split_location.Name" xml:space="preserve">
-    <value>NameOF_PDF_Split_location</value>
-  </data>
-  <data name="&gt;&gt;NameOF_PDF_Split_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOF_PDF_Split_location.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;NameOF_PDF_Split_location.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="Select_PDF_Split_Source.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="Select_PDF_Split_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Select_PDF_Split_Source.Location" type="System.Drawing.Point, System.Drawing">
-    <value>728, 68</value>
-  </data>
-  <data name="Select_PDF_Split_Source.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
-  </data>
-  <data name="Select_PDF_Split_Source.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Select_PDF_Split_Source.Text" xml:space="preserve">
-    <value>開啟</value>
-  </data>
-  <data name="&gt;&gt;Select_PDF_Split_Source.Name" xml:space="preserve">
-    <value>Select_PDF_Split_Source</value>
-  </data>
-  <data name="&gt;&gt;Select_PDF_Split_Source.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Select_PDF_Split_Source.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;Select_PDF_Split_Source.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="Show_PDF_Split_Source.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Show_PDF_Split_Source.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 68</value>
-  </data>
-  <data name="Show_PDF_Split_Source.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 30</value>
-  </data>
-  <data name="Show_PDF_Split_Source.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Split_Source.Name" xml:space="preserve">
-    <value>Show_PDF_Split_Source</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Split_Source.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Split_Source.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;Show_PDF_Split_Source.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="NameOf_PDF_Split_Source.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="NameOf_PDF_Split_Source.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="NameOf_PDF_Split_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="NameOf_PDF_Split_Source.Location" type="System.Drawing.Point, System.Drawing">
-    <value>51, 42</value>
-  </data>
-  <data name="NameOf_PDF_Split_Source.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 23</value>
-  </data>
-  <data name="NameOf_PDF_Split_Source.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="NameOf_PDF_Split_Source.Text" xml:space="preserve">
-    <value>選取PDF來源</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDF_Split_Source.Name" xml:space="preserve">
-    <value>NameOf_PDF_Split_Source</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDF_Split_Source.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDF_Split_Source.Parent" xml:space="preserve">
-    <value>PDF_Split</value>
-  </data>
-  <data name="&gt;&gt;NameOf_PDF_Split_Source.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="Clear_ImagetoPDF_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Clear_ImagetoPDF_Source.Location" type="System.Drawing.Point, System.Drawing">
-    <value>739, 177</value>
-  </data>
-  <data name="Clear_ImagetoPDF_Source.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Clear_ImagetoPDF_Source.TabIndex" type="System.Int32, mscorlib">
-    <value>118</value>
-  </data>
-  <data name="Clear_ImagetoPDF_Source.Text" xml:space="preserve">
-    <value>清空清單</value>
-  </data>
-  <data name="&gt;&gt;Clear_ImagetoPDF_Source.Name" xml:space="preserve">
-    <value>Clear_ImagetoPDF_Source</value>
-  </data>
-  <data name="&gt;&gt;Clear_ImagetoPDF_Source.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Clear_ImagetoPDF_Source.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;Clear_ImagetoPDF_Source.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Set_IMGtoPDF_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="Set_IMGtoPDF_SaveLocation.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Set_IMGtoPDF_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>739, 237</value>
-  </data>
-  <data name="Set_IMGtoPDF_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 30</value>
-  </data>
-  <data name="Set_IMGtoPDF_SaveLocation.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="Set_IMGtoPDF_SaveLocation.Text" xml:space="preserve">
-    <value>瀏覽</value>
-  </data>
-  <data name="&gt;&gt;Set_IMGtoPDF_SaveLocation.Name" xml:space="preserve">
-    <value>Set_IMGtoPDF_SaveLocation</value>
-  </data>
-  <data name="&gt;&gt;Set_IMGtoPDF_SaveLocation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Set_IMGtoPDF_SaveLocation.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;Set_IMGtoPDF_SaveLocation.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Show_IMGtoPDF_SaveLocation.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Show_IMGtoPDF_SaveLocation.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 238</value>
-  </data>
-  <data name="Show_IMGtoPDF_SaveLocation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 30</value>
-  </data>
-  <data name="Show_IMGtoPDF_SaveLocation.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;Show_IMGtoPDF_SaveLocation.Name" xml:space="preserve">
-    <value>Show_IMGtoPDF_SaveLocation</value>
-  </data>
-  <data name="&gt;&gt;Show_IMGtoPDF_SaveLocation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Show_IMGtoPDF_SaveLocation.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;Show_IMGtoPDF_SaveLocation.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Name_toIMG_location.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Name_toIMG_location.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Name_toIMG_location.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Name_toIMG_location.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 212</value>
-  </data>
-  <data name="Name_toIMG_location.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 23</value>
-  </data>
-  <data name="Name_toIMG_location.TabIndex" type="System.Int32, mscorlib">
-    <value>117</value>
-  </data>
-  <data name="Name_toIMG_location.Text" xml:space="preserve">
-    <value>選取合併後PDF儲存位置</value>
-  </data>
-  <data name="&gt;&gt;Name_toIMG_location.Name" xml:space="preserve">
-    <value>Name_toIMG_location</value>
-  </data>
-  <data name="&gt;&gt;Name_toIMG_location.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Name_toIMG_location.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;Name_toIMG_location.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Execute_IMGtoPDF.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 13pt</value>
-  </data>
-  <data name="Execute_IMGtoPDF.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Execute_IMGtoPDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 278</value>
-  </data>
-  <data name="Execute_IMGtoPDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 32</value>
-  </data>
-  <data name="Execute_IMGtoPDF.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="Execute_IMGtoPDF.Text" xml:space="preserve">
-    <value>執行</value>
-  </data>
-  <data name="&gt;&gt;Execute_IMGtoPDF.Name" xml:space="preserve">
-    <value>Execute_IMGtoPDF</value>
-  </data>
-  <data name="&gt;&gt;Execute_IMGtoPDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Execute_IMGtoPDF.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;Execute_IMGtoPDF.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Nameof_IMGtoPDF_cmd.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Nameof_IMGtoPDF_cmd.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft JhengHei UI, 11pt</value>
-  </data>
-  <data name="Nameof_IMGtoPDF_cmd.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Nameof_IMGtoPDF_cmd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 322</value>
-  </data>
-  <data name="Nameof_IMGtoPDF_cmd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 19</value>
-  </data>
-  <data name="Nameof_IMGtoPDF_cmd.TabIndex" type="System.Int32, mscorlib">
-    <value>114</value>
-  </data>
-  <data name="Nameof_IMGtoPDF_cmd.Text" xml:space="preserve">
-    <value>輸出結果：</value>
-  </data>
-  <data name="&gt;&gt;Nameof_IMGtoPDF_cmd.Name" xml:space="preserve">
-    <value>Nameof_IMGtoPDF_cmd</value>
-  </data>
-  <data name="&gt;&gt;Nameof_IMGtoPDF_cmd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Nameof_IMGtoPDF_cmd.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;Nameof_IMGtoPDF_cmd.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="cmd_IMGtoPDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 344</value>
-  </data>
-  <data name="cmd_IMGtoPDF.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cmd_IMGtoPDF.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
-  </data>
-  <data name="cmd_IMGtoPDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>762, 206</value>
-  </data>
-  <data name="cmd_IMGtoPDF.TabIndex" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;cmd_IMGtoPDF.Name" xml:space="preserve">
-    <value>cmd_IMGtoPDF</value>
-  </data>
-  <data name="&gt;&gt;cmd_IMGtoPDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmd_IMGtoPDF.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;cmd_IMGtoPDF.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="Del_ImagetoPDF_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Del_ImagetoPDF_Source.Location" type="System.Drawing.Point, System.Drawing">
-    <value>739, 60</value>
-  </data>
-  <data name="Del_ImagetoPDF_Source.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Del_ImagetoPDF_Source.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Del_ImagetoPDF_Source.Text" xml:space="preserve">
-    <value>刪除</value>
-  </data>
-  <data name="&gt;&gt;Del_ImagetoPDF_Source.Name" xml:space="preserve">
-    <value>Del_ImagetoPDF_Source</value>
-  </data>
-  <data name="&gt;&gt;Del_ImagetoPDF_Source.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Del_ImagetoPDF_Source.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;Del_ImagetoPDF_Source.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Add_ImagetoPDF_Source.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Add_ImagetoPDF_Source.Location" type="System.Drawing.Point, System.Drawing">
-    <value>739, 31</value>
-  </data>
-  <data name="Add_ImagetoPDF_Source.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="Add_ImagetoPDF_Source.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Add_ImagetoPDF_Source.Text" xml:space="preserve">
-    <value>加入</value>
-  </data>
-  <data name="&gt;&gt;Add_ImagetoPDF_Source.Name" xml:space="preserve">
-    <value>Add_ImagetoPDF_Source</value>
-  </data>
-  <data name="&gt;&gt;Add_ImagetoPDF_Source.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Add_ImagetoPDF_Source.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;Add_ImagetoPDF_Source.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="IMGtoPDF_list.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="IMGtoPDF_list.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 31</value>
-  </data>
-  <data name="IMGtoPDF_list.Size" type="System.Drawing.Size, System.Drawing">
-    <value>681, 169</value>
-  </data>
-  <data name="IMGtoPDF_list.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;IMGtoPDF_list.Name" xml:space="preserve">
-    <value>IMGtoPDF_list</value>
-  </data>
-  <data name="&gt;&gt;IMGtoPDF_list.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IMGtoPDF_list.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;IMGtoPDF_list.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

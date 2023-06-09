@@ -581,7 +581,7 @@ namespace PDF_tools
         {
             if (File.Exists(Show_PDF_Split_Source.Text))
             {
-                if (Show_PDF_Split_Source.Text != "" && Show_PDF_Split_SaveLocation.Text !="")
+                if (Show_PDF_Split_Source.Text != "" && Show_PDF_Split_SaveLocation.Text != "")
                 {
                     int Start_Page = int.Parse(Set_Start_Page.Text);
                     int End_Page = int.Parse(Set_End_Page.Text);
@@ -591,8 +591,8 @@ namespace PDF_tools
                     }
                     if (File.Exists(GB.gs) == true)
                     {
-                        StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" + 
-                            Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" + 
+                        StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" +
+                            Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" +
                             Show_PDF_Split_SaveLocation.Text + "\" \"" + Show_PDF_Split_Source.Text + "\"");
                         RunTime(cmd_PDF_Split, WL.ToString());
                     }
