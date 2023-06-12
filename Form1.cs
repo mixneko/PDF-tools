@@ -152,7 +152,7 @@ namespace PDF_tools
                         }
                         else if (File.Exists(folderBrowserDialog1.SelectedPath + "\\gswin64c.exe") == true)
                         {
-                            MessageBox.Show("已成功偵測到gswin64c.exe，");
+                            MessageBox.Show(@"已成功偵測到gswin64c.exe，");
                             Show_GS_location.Enabled = false;
                             Set_GS_location.Enabled = false;
                             Show_GS_location.Text = folderBrowserDialog1.SelectedPath + "\\gswin64c.exe";
