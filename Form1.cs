@@ -152,7 +152,7 @@ namespace PDF_tools
                         }
                         else if (File.Exists(folderBrowserDialog1.SelectedPath + "\\gswin64c.exe") == true)
                         {
-                            MessageBox.Show("已成功偵測到gswin64c.exe，");
+                            MessageBox.Show(@"已成功偵測到gswin64c.exe，");
                             Show_GS_location.Enabled = false;
                             Set_GS_location.Enabled = false;
                             Show_GS_location.Text = folderBrowserDialog1.SelectedPath + "\\gswin64c.exe";
@@ -179,11 +179,11 @@ namespace PDF_tools
                     case DialogResult.OK:
                         if (File.Exists(folderBrowserDialog1.SelectedPath + "\\convert.exe") == false)
                         {
-                            MessageBox.Show("此目錄未偵測到convert.exe，請確認環境變數");
+                            MessageBox.Show(@"此目錄未偵測到convert.exe，請確認環境變數");
                         }
                         else if (File.Exists(folderBrowserDialog1.SelectedPath + "\\convert.exe") == true)
                         {
-                            MessageBox.Show("已成功偵測到convert.exe，");
+                            MessageBox.Show(@"已成功偵測到convert.exe，");
                             Show_IM_location.Enabled = false;
                             Set_IM_location.Enabled = false;
                             Show_IM_location.Text = folderBrowserDialog1.SelectedPath + "\\convert.exe";
@@ -202,7 +202,7 @@ namespace PDF_tools
 
         private void SelectPDFSource_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "(*.PDF)|*.PDF";
+            openFileDialog1.Filter = "(*.pdf)|*.pdf";
             openFileDialog1.FileName = "";
             openFileDialog1.Multiselect = false;
             bool er = true;
@@ -581,7 +581,7 @@ namespace PDF_tools
         {
             if (File.Exists(Show_PDF_Split_Source.Text))
             {
-                if (Show_PDF_Split_Source.Text != "" && Show_PDF_Split_SaveLocation.Text !="")
+                if (Show_PDF_Split_Source.Text != "" && Show_PDF_Split_SaveLocation.Text != "")
                 {
                     int Start_Page = int.Parse(Set_Start_Page.Text);
                     int End_Page = int.Parse(Set_End_Page.Text);
@@ -591,8 +591,8 @@ namespace PDF_tools
                     }
                     if (File.Exists(GB.gs) == true)
                     {
-                        StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" + 
-                            Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" + 
+                        StringBuilder WL = new($"\"{GB.gs}\" -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dFirstPage=" +
+                            Start_Page.ToString() + " -dLastPage=" + End_Page.ToString() + " -sOutputFile=" + "\"" +
                             Show_PDF_Split_SaveLocation.Text + "\" \"" + Show_PDF_Split_Source.Text + "\"");
                         RunTime(cmd_PDF_Split, WL.ToString());
                     }
@@ -760,6 +760,7 @@ namespace PDF_tools
                 MessageBox.Show(other.Message);
             }
         }
+
 
         private static void RunTime(TextBox TextCMD, string WL)
         {
