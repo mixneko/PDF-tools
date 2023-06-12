@@ -1,3 +1,4 @@
+[![.NET](https://github.com/mixneko/PDF-tools/actions/workflows/dotnet.yml/badge.svg?branch=master)](https://github.com/mixneko/PDF-tools/actions/workflows/dotnet.yml)
 # PDF tools
 這是一個整合了 GhostScript 和 ImageMagick，專為處理 PDF 檔案所製作的實用工具。
 
