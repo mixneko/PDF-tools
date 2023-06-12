@@ -179,11 +179,11 @@ namespace PDF_tools
                     case DialogResult.OK:
                         if (File.Exists(folderBrowserDialog1.SelectedPath + "\\convert.exe") == false)
                         {
-                            MessageBox.Show("此目錄未偵測到convert.exe，請確認環境變數");
+                            MessageBox.Show(@"此目錄未偵測到convert.exe，請確認環境變數");
                         }
                         else if (File.Exists(folderBrowserDialog1.SelectedPath + "\\convert.exe") == true)
                         {
-                            MessageBox.Show("已成功偵測到convert.exe，");
+                            MessageBox.Show(@"已成功偵測到convert.exe，");
                             Show_IM_location.Enabled = false;
                             Set_IM_location.Enabled = false;
                             Show_IM_location.Text = folderBrowserDialog1.SelectedPath + "\\convert.exe";
